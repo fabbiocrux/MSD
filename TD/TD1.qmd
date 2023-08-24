@@ -1,5 +1,5 @@
 ---
-title: "TD 1: Schéma Cinématique"
+title: "TD 1: Introduction"
 subtitle: "Objectif: Comprendre la répresentation d'un Schéma Cinématique"
 format:
   # pdf:
@@ -11,6 +11,10 @@ format:
 ---
 
 
-
 ## Objective TD
 
+
+## Exercise 1
+
+
+Soit une for $F$ de 144 $kN$ à une tige d'un matériaux à determiner de longeur initiale de 4$m$
