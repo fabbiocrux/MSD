@@ -1,0 +1,16 @@
+---
+title: "TD 1: Schéma Cinématique"
+subtitle: "Objectif: Comprendre la répresentation d'un Schéma Cinématique"
+format:
+  # pdf:
+  #   toc: true
+  #   number-sections: true
+  #   colorlinks: true
+  html:
+    number-sections: true
+---
+
+
+
+## Objective TD
+

@@ -1,0 +1,66 @@
+---
+title: "Introduction à la conception de système mécatronique"
+subtitle: "Conception et Innovation"
+details: |
+  "Think with your hands, build something or ty something, then talk about it, NOT the Reverse." *David Kelly, Founder IDEO & Standford Deisgn School* 
+sidebar: false
+page-layout: full
+course-logo: /assets/img/logo-mdp.png
+format:
+  html:
+    template-partials:
+      - assets/html/title-block.html
+
+---
+
+
+:::: {.hero-banner}
+
+::: {.content-block}
+
+::: {.hero-text}
+
+
+
+::: {.grid .course-details}
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+## Instructors
+
+- {{< fa user >}} &nbsp; [{{< var alaa.name >}}]({{< var fabio.url >}})
+- {{< fa user >}} &nbsp; [{{< var fabio.name >}}]({{< var fabio.url >}})
+- {{< fa university >}} &nbsp; {{< var fabio.office >}}
+- {{< fa calendar-check >}} &nbsp; [Schedule an appointment]({{< var fabio.appointment_url >}})
+:::
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+## Course details
+
+- {{< fa calendar >}} &nbsp; {{< var course.days >}}
+- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+- {{< fa clock >}} &nbsp; {{< var course.time >}}
+- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
+
+:::
+
+::: {.g-col-12 .g-col-md-4 .contact-policy}
+## Contactez nous
+
+{{< var fabio.contact_policy >}}
+:::
+
+:::
+
+
+
+:::
+
+::: {.hero-animation}
+
+
+:::
+
+:::
+
+
+::::

@@ -1,0 +1,11 @@
+---
+title: "TD 2: "
+subtitle: "Objectif: ..."
+format:
+  # pdf:
+  #   toc: true
+  #   number-sections: true
+  #   colorlinks: true
+  html:
+    number-sections: true
+---

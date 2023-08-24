@@ -1,0 +1,25 @@
+---
+title: "Syllabus du Cours"
+subtitle: "Introduction à la conception de système mécatronique"
+#page-layout: full
+toc: true
+---
+
+
+# Objectif du Module
+
+Ce cours vise les étudiants de $1^{ère}$ année de cycle d'Ingénierie de l'ENSGSI.
+
+La conception de systèmes mécatroniques repose sur un ensemble de technologies (incluant notamment l'impression 3D, l'usinage à commande numérique et l'électronique programmable) permettant la production de systèmes fonctionnels (maquettes, preuves de concepts) en un temps et un coût réduit. La maitrise de ces technologies est primordiale afin d’être capable de choisir les outils les plus adaptés en prenant en compte les contraintes spécifiques à chaque technologie ainsi qu'au prototype à réaliser.
+
+L'objectif du cours est de donner aux élèves les compétences de base afin de pouvoir matérialiser une idée conceptuelle vers un objet de conception intermédiaire mécatronique pour un concept donné. Ce module utilisera les technologies disponibles au Lorraine Fab Living Lab. A l'issue du cours, les élèves auront acquis la culture scientifique et technique nécessaire à la conception et à la réalisation, en autonomie, d'un prototype de système mécanique fonctionnel comportant une partie commande.
+
+# Mind Mapping Conceptuel du Cours
+
+
+# Planning des Séances
+
+## Notes
+
+
+## Bibliographie

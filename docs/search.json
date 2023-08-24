@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "section": "",
+    "text": "Conception et Innovation\n         \n         \n             “Think with your hands, build something or ty something, then talk about it, NOT the Reverse.” David Kelly, Founder IDEO & Standford Deisgn School\n         \n         \n         \n            Cours Magistraux            \n            Guide de Travaux Dirigés"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Bienvenue",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "CM/CM1.html",
+    "href": "CM/CM1.html",
+    "title": "Introduction Schéma Cinématiques",
+    "section": "",
+    "text": "1 Lecture obligatoire\n\n\n2 Slides\n\n\n3 Bibliographie\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "CM.html#notes",
+    "href": "CM.html#notes",
+    "title": "Syllabus du Cours",
+    "section": "3.1 Notes",
+    "text": "3.1 Notes"
+  },
+  {
+    "objectID": "CM.html#bibliographie",
+    "href": "CM.html#bibliographie",
+    "title": "Syllabus du Cours",
+    "section": "3.2 Bibliographie",
+    "text": "3.2 Bibliographie"
+  },
+  {
+    "objectID": "CM/01-schema-cinematique.html",
+    "href": "CM/01-schema-cinematique.html",
+    "title": "Introduction Schéma Cinématiques",
+    "section": "",
+    "text": "1 Lecture\n\n\n2 Slides\n\n\n3 Idé\n\n\n4 Bibliographie\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "section": "1 Instructor",
+    "text": "1 Instructor\n\n   MdC. Alaa Hassan\n   Dr. Fabio A Cruz\n   ENSGSI\n   fabio.cruz@univ-lorraine.fr\n   fabbiocrux\n   Schedule an appointment"
+  },
+  {
+    "objectID": "index.html#instructors",
+    "href": "index.html#instructors",
+    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "section": "1 Instructors",
+    "text": "1 Instructors\n\n   MdC. Alaa Hassan\n   Dr. Fabio A Cruz\n   ENSGSI\n   Schedule an appointment"
+  },
+  {
+    "objectID": "index.html#course-details",
+    "href": "index.html#course-details",
+    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "section": "2 Course details",
+    "text": "2 Course details\n\n   Thursdays\n   January 9–May 2, 2023\n   7:15–9:45 PM\n   ENSGSI"
+  },
+  {
+    "objectID": "index.html#contacting-me",
+    "href": "index.html#contacting-me",
+    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "section": "3 Contacting me",
+    "text": "3 Contacting me\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours (really), but also remember that life can be busy and chaotic for everyone (including me!), so if I don’t respond right away, don’t worry!"
+  },
+  {
+    "objectID": "index.html#contacting-us",
+    "href": "index.html#contacting-us",
+    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "section": "3 Contacting us",
+    "text": "3 Contacting us\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours (really), but also remember that life can be busy and chaotic for everyone (including me!), so if I don’t respond right away, don’t worry!"
+  },
+  {
+    "objectID": "TP/TP1.html",
+    "href": "TP/TP1.html",
+    "title": "TP 1:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "TP/TP2.html",
+    "href": "TP/TP2.html",
+    "title": "TP 2:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "TP/TP3.html",
+    "href": "TP/TP3.html",
+    "title": "TP 3:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "TP/TP4.html",
+    "href": "TP/TP4.html",
+    "title": "TP 4:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "TP/TP5.html",
+    "href": "TP/TP5.html",
+    "title": "TP 5:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "TP/TP6.html",
+    "href": "TP/TP6.html",
+    "title": "TP 6:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "TP/TP7.html",
+    "href": "TP/TP7.html",
+    "title": "TP 7:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "TP/TP8.html",
+    "href": "TP/TP8.html",
+    "title": "TP 8:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "TP/TP9.html",
+    "href": "TP/TP9.html",
+    "title": "TP 9:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "TD/TD2.html",
+    "href": "TD/TD2.html",
+    "title": "TD 2:",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "CM/CM6.html",
+    "href": "CM/CM6.html",
+    "title": "Elements de Machines II",
+    "section": "",
+    "text": "1 Lecture\n\n\n2 Slides\n\n\n3 Idé\n\n\n4 Bibliographie\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "CM/CM4.html",
+    "href": "CM/CM4.html",
+    "title": "Introduction aux Système Mécatroniques II",
+    "section": "",
+    "text": "1 Lecture\n\n\n2 Slides\n\n\n3 Idé\n\n\n4 Bibliographie\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "CM/CM5.html",
+    "href": "CM/CM5.html",
+    "title": "Elements de Machines I",
+    "section": "",
+    "text": "1 Lecture\n\n\n2 Slides\n\n\n3 Idé\n\n\n4 Bibliographie\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "CM/CM2.html",
+    "href": "CM/CM2.html",
+    "title": "Chaine d’Information et Energie",
+    "section": "",
+    "text": "1 Lecture\n\n\n2 Slides\n\n\n3 Idé\n\n\n4 Bibliographie\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "CM/CM3.html",
+    "href": "CM/CM3.html",
+    "title": "Introduction aux Système Mécatroniques I",
+    "section": "",
+    "text": "1 Lecture\n\n\n2 Slides\n\n\n3 Idé\n\n\n4 Bibliographie\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html#contacterz-us",
+    "href": "index.html#contacterz-us",
+    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "section": "3 Contacterz us",
+    "text": "3 Contacterz us\nE-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours (really), but also remember that life can be busy and chaotic for everyone (including me!), so if I don’t respond right away, don’t worry!"
+  },
+  {
+    "objectID": "index.html#contactez-nous",
+    "href": "index.html#contactez-nous",
+    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "section": "3 Contactez nous",
+    "text": "3 Contactez nous\nL’e-mail et Microsoft teams sont les meilleurs moyens de nous contacter. On essai de répondre à tous les courriels et messages liés au cours dans les XX heures (vraiment), mais rappelez-vous aussi que la vie peut être occupée et chaotique pour tout le monde (y compris nous !), alors si je ne réponds pas tout de suite, ne vous inquiétez pas !"
+  },
+  {
+    "objectID": "CM.html",
+    "href": "CM.html",
+    "title": "Syllabus du Cours",
+    "section": "",
+    "text": "Ce cours vise les étudiants de \\(1^{ère}\\) année de cycle d’Ingénierie de l’ENSGSI.\nLa conception de systèmes mécatroniques repose sur un ensemble de technologies (incluant notamment l’impression 3D, l’usinage à commande numérique et l’électronique programmable) permettant la production de systèmes fonctionnels (maquettes, preuves de concepts) en un temps et un coût réduit. La maitrise de ces technologies est primordiale afin d’être capable de choisir les outils les plus adaptés en prenant en compte les contraintes spécifiques à chaque technologie ainsi qu’au prototype à réaliser.\nL’objectif du cours est de donner aux élèves les compétences de base afin de pouvoir matérialiser une idée conceptuelle vers un objet de conception intermédiaire mécatronique pour un concept donné. Ce module utilisera les technologies disponibles au Lorraine Fab Living Lab. A l’issue du cours, les élèves auront acquis la culture scientifique et technique nécessaire à la conception et à la réalisation, en autonomie, d’un prototype de système mécanique fonctionnel comportant une partie commande."
+  }
+]
