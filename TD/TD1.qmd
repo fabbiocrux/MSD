@@ -1,13 +1,36 @@
 ---
 title: "TD 1: Introduction"
-subtitle: "Objectif: Comprendre la répresentation d'un Schéma Cinématique"
+subtitle: "Objectif: Application de la Loi de Hooke"
 ---
+\thispagestyle{fancy}
 
-## Objective TD
+# Exercise 1: Contrainte en traction
 
-## Exercise 1
-
-Soit une force $F$ de 144 $kN$ à une tige de longeur initiale de 4$m$ d'un matériaux à determiner 
-
+Soit une force $F$ de 144 $kN$ à une tige de longeur initiale de 4$m$ d'un matériaux à determiner. Cette dernière s'allonge de $2mm$. La tige a une section carré de $20cm  \times 20cm$.
 
 
+:::: {.columns}
+::: {.column width="40%"}
+![](../assets/img/TD1/Ex1.png){width=3cm fig-align="center"}
+:::
+
+::: {.column width="60%"}
+1. Calculez la déformation normale $\epsilon$, la contrainte en traction $\sigma$ et son module d'e Young'elasticité $E$.
+:::
+::::
+
+
+
+# Exercise 2: Contrainte de Cisallement
+
+Calculez la déformation tangentielle (demi distorsion angulaire) d'une tige ***d'alluminium*** de $3m$ de long et de $1cm^{2}$ de section qui est soumise à un effort transversal de $100kN$
+
+
+# Exercise 3: Compression poteau
+
+Un poteau de chêne (module de Young $E=12GPa$) de $3m$
+
+
+
+
+# Exercise 4
