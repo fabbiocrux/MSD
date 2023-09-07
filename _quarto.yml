@@ -1,6 +1,14 @@
 project:
   type: website
   output-dir: docs
+
+book:
+  title: "mybook"
+  author: "Jane Doe"
+  date: "8/18/2021"
+  chapters:
+    - TD/TD1.qmd
+
   
 website:
   title: "CI3:" 
@@ -121,9 +129,18 @@ format:
             }
           };
           </script>    
-    #css: assets/styles.css  
-  # pdf:
-  #   documentclass: scrreprt
+#      css: assets/styles.css  
+  pdf:
+    documentclass: article
+    number-sections: true
+    keep-tex: false
+    colorlinks: true
+    geometry:
+      - top=30mm
+      - left=20mm
+      - heightrounded
+    include-in-header:
+      - file: "assets/latex.tex"
 
 
 execute:

@@ -10,37 +10,28 @@ format:
   html:
     template-partials:
       - assets/html/title-block.html
-
 ---
 
-
-:::: {.hero-banner}
-
-::: {.content-block}
-
-::: {.hero-text}
-
-
-
+::: hero-banner
+::: content-block
+::: hero-text
 ::: {.grid .course-details}
-
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
 ## Instructors
 
-- {{< fa user >}} &nbsp; [{{< var alaa.name >}}]({{< var fabio.url >}})
-- {{< fa user >}} &nbsp; [{{< var fabio.name >}}]({{< var fabio.url >}})
-- {{< fa university >}} &nbsp; {{< var fabio.office >}}
-- {{< fa calendar-check >}} &nbsp; [Schedule an appointment]({{< var fabio.appointment_url >}})
+-   {{< fa user >}}   [{{< var alaa.name >}}](%7B%7B%3C%20var%20fabio.url%20%3E%7D%7D)
+-   {{< fa user >}}   [{{< var fabio.name >}}](%7B%7B%3C%20var%20fabio.url%20%3E%7D%7D)
+-   {{< fa university >}}   {{< var fabio.office >}}
+-   {{< fa calendar-check >}}   [Schedule an appointment](%7B%7B%3C%20var%20fabio.appointment_url%20%3E%7D%7D)
 :::
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
 ## Course details
 
-- {{< fa calendar >}} &nbsp; {{< var course.days >}}
-- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
-- {{< fa clock >}} &nbsp; {{< var course.time >}}
-- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
-
+-   {{< fa calendar >}}   {{< var course.days >}}
+-   {{< fa calendar-alt >}}   {{< var course.dates >}}
+-   {{< fa clock >}}   {{< var course.time >}}
+-   {{< fa location-dot >}}   {{< var course.location >}}
 :::
 
 ::: {.g-col-12 .g-col-md-4 .contact-policy}
@@ -48,19 +39,10 @@ format:
 
 {{< var fabio.contact_policy >}}
 :::
-
+:::
 :::
 
-
-
+::: hero-animation
 :::
-
-::: {.hero-animation}
-
-
 :::
-
 :::
-
-
-::::

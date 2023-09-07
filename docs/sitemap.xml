@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/CM/CM1.html</loc>
-    <lastmod>2023-08-23T07:58:14.417Z</lastmod>
-  </url>
-  <url>
     <loc>/CM.html</loc>
-    <lastmod>2023-08-23T07:56:54.921Z</lastmod>
+    <lastmod>2023-09-07T09:07:44.678Z</lastmod>
   </url>
   <url>
     <loc>/TD.html</loc>
-    <lastmod>2023-08-23T07:57:09.194Z</lastmod>
-  </url>
-  <url>
-    <loc>/CM/01-schema-cinematique.html</loc>
-    <lastmod>2023-08-22T08:49:23.075Z</lastmod>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-    <lastmod>2023-08-23T08:03:11.711Z</lastmod>
+    <lastmod>2023-09-07T09:07:45.166Z</lastmod>
   </url>
   <url>
     <loc>/TP.html</loc>
-    <lastmod>2023-08-23T07:58:05.014Z</lastmod>
-  </url>
-  <url>
-    <loc>/TP/TP1.html</loc>
-    <lastmod>2023-08-22T09:16:26.432Z</lastmod>
-  </url>
-  <url>
-    <loc>/TP/TP2.html</loc>
-    <lastmod>2023-08-22T09:16:34.349Z</lastmod>
-  </url>
-  <url>
-    <loc>/TP/TP3.html</loc>
-    <lastmod>2023-08-22T09:16:40.905Z</lastmod>
-  </url>
-  <url>
-    <loc>/TP/TP4.html</loc>
-    <lastmod>2023-08-22T09:16:50.311Z</lastmod>
-  </url>
-  <url>
-    <loc>/TP/TP5.html</loc>
-    <lastmod>2023-08-22T09:16:56.363Z</lastmod>
-  </url>
-  <url>
-    <loc>/TP/TP6.html</loc>
-    <lastmod>2023-08-22T09:17:01.654Z</lastmod>
-  </url>
-  <url>
-    <loc>/TP/TP7.html</loc>
-    <lastmod>2023-08-22T09:17:06.740Z</lastmod>
-  </url>
-  <url>
-    <loc>/TP/TP8.html</loc>
-    <lastmod>2023-08-22T09:17:12.427Z</lastmod>
+    <lastmod>2023-09-07T09:07:45.618Z</lastmod>
   </url>
   <url>
     <loc>/TP/TP9.html</loc>
-    <lastmod>2023-08-22T09:17:17.497Z</lastmod>
+    <lastmod>2023-09-07T09:07:46.094Z</lastmod>
+  </url>
+  <url>
+    <loc>/TP/TP8.html</loc>
+    <lastmod>2023-09-07T09:07:46.521Z</lastmod>
+  </url>
+  <url>
+    <loc>/TP/TP3.html</loc>
+    <lastmod>2023-09-07T09:07:46.948Z</lastmod>
+  </url>
+  <url>
+    <loc>/TP/TP2.html</loc>
+    <lastmod>2023-09-07T09:07:47.350Z</lastmod>
+  </url>
+  <url>
+    <loc>/TP/TP1.html</loc>
+    <lastmod>2023-09-07T09:07:47.766Z</lastmod>
+  </url>
+  <url>
+    <loc>/TP/TP5.html</loc>
+    <lastmod>2023-09-07T09:07:48.185Z</lastmod>
+  </url>
+  <url>
+    <loc>/TP/TP4.html</loc>
+    <lastmod>2023-09-07T09:07:48.580Z</lastmod>
+  </url>
+  <url>
+    <loc>/TP/TP6.html</loc>
+    <lastmod>2023-09-07T09:07:48.987Z</lastmod>
+  </url>
+  <url>
+    <loc>/TP/TP7.html</loc>
+    <lastmod>2023-09-07T09:07:49.382Z</lastmod>
   </url>
   <url>
     <loc>/TD/TD1.html</loc>
-    <lastmod>2023-08-23T07:57:13.580Z</lastmod>
+    <lastmod>2023-09-07T09:08:14.941Z</lastmod>
   </url>
   <url>
     <loc>/TD/TD2.html</loc>
-    <lastmod>2023-08-23T07:58:01.637Z</lastmod>
+    <lastmod>2023-09-07T09:07:50.218Z</lastmod>
+  </url>
+  <url>
+    <loc>/index.html</loc>
+    <lastmod>2023-09-07T09:07:50.725Z</lastmod>
   </url>
   <url>
     <loc>/CM/CM6.html</loc>
-    <lastmod>2023-08-22T09:19:57.598Z</lastmod>
+    <lastmod>2023-09-07T09:07:51.140Z</lastmod>
   </url>
   <url>
     <loc>/CM/CM4.html</loc>
-    <lastmod>2023-08-22T09:19:58.021Z</lastmod>
+    <lastmod>2023-09-07T09:07:51.560Z</lastmod>
   </url>
   <url>
     <loc>/CM/CM5.html</loc>
-    <lastmod>2023-08-22T09:19:58.440Z</lastmod>
+    <lastmod>2023-09-07T09:07:51.998Z</lastmod>
+  </url>
+  <url>
+    <loc>/CM/CM1.html</loc>
+    <lastmod>2023-09-07T09:07:52.452Z</lastmod>
   </url>
   <url>
     <loc>/CM/CM2.html</loc>
-    <lastmod>2023-08-22T09:19:59.261Z</lastmod>
+    <lastmod>2023-09-07T09:07:52.938Z</lastmod>
   </url>
   <url>
     <loc>/CM/CM3.html</loc>
-    <lastmod>2023-08-22T09:19:59.656Z</lastmod>
+    <lastmod>2023-09-07T09:07:53.347Z</lastmod>
+  </url>
+  <url>
+    <loc>/references.html</loc>
+    <lastmod>2023-09-07T09:07:53.794Z</lastmod>
   </url>
 </urlset>
