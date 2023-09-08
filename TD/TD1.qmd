@@ -15,7 +15,7 @@ Le matériaux est à determiner.
 :::: {layout="[ 40, 60 ]" layout-valign="center"}
 
 ::: {#first-column}
-![](../assets/img/TD1/Ex1.png){width=5cm fig-align="center"}
+![](../assets/img/TD1/Ex1.png){width=4.2cm fig-align="center"}
 :::
 
 ::: {#second-column}

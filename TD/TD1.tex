@@ -84,6 +84,7 @@
 \fancyfoot[L]{Guillaume PRONOST | Fabio CRUZ}
 \fancyfoot[C]{\thepage}
 \fancyfoot[R]{ENSGSI - 2023/2024}
+\renewcommand{\footrulewidth}{0.3pt}% default is 0pt
 \makeatletter
 \makeatother
 \makeatletter
@@ -165,7 +166,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, breakable, interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, boxrule=0pt, interior hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, enhanced, frame hidden]}{\end{tcolorbox}}\fi
 
 \thispagestyle{fancy}
 
@@ -183,7 +184,7 @@ s'allonge de \(2mm\). Le matériaux est à determiner.
 
 {\centering 
 
-\includegraphics[width=5cm,height=\textheight]{../assets/img/TD1/Ex1.png}
+\includegraphics[width=4.2cm,height=\textheight]{../assets/img/TD1/Ex1.png}
 
 }
 
