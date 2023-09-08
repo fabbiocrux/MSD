@@ -12,14 +12,14 @@ Cette tige a une section carré de $20cm \times 20cm$ et s'allonge de $2mm$.
 Le matériaux est à determiner. 
 
 
-:::: {layout="[ 40, 60 ]" layout-valign="center"}
+:::: {layout="[ 35, 65 ]" layout-valign="center"}
 
 ::: {#first-column}
 ![](../assets/img/TD1/Ex1.png){width=4.2cm fig-align="center"}
 :::
 
 ::: {#second-column}
-1. Calculez la déformation normale $\epsilon$, la contrainte en traction $\sigma$ et son module d'e Young'elasticité $E$.
+1. Calculez la déformation normale $\epsilon$, la contrainte en traction $\sigma$ et son module de Young d'elasticité $E$.
 
 2. A quel matériau pur ce module de Young peut-il correspondre ?
 :::
@@ -46,7 +46,6 @@ Calculez la déformation tangentielle (demi distorsion angulaire) d'une tige d'a
 # Exercise 3: Compression poteau
 
 Un poteau de chêne (module de Young $E= 12~GPa$) de $3~m$ est utilisé pour supporter une charge compressive dans le sens des fibres. 
-
 La section du poteau est carrée et vaut $235~mm \times 235~mm$. 
 Une masse de $20~kg$ est appliquée sur la partie supérieure du poteau.
 

@@ -166,7 +166,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, boxrule=0pt, interior hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, enhanced, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, frame hidden, boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, breakable, interior hidden]}{\end{tcolorbox}}\fi
 
 \thispagestyle{fancy}
 
@@ -180,7 +180,7 @@ s'allonge de \(2mm\). Le matériaux est à determiner.
 
 \begin{figure}
 
-\begin{minipage}[c]{0.40\linewidth}
+\begin{minipage}[c]{0.35\linewidth}
 
 {\centering 
 
@@ -190,7 +190,7 @@ s'allonge de \(2mm\). Le matériaux est à determiner.
 
 \end{minipage}%
 %
-\begin{minipage}[c]{0.60\linewidth}
+\begin{minipage}[c]{0.65\linewidth}
 
 {\centering 
 
@@ -198,7 +198,7 @@ s'allonge de \(2mm\). Le matériaux est à determiner.
 \def\labelenumi{\arabic{enumi}.}
 \item
   Calculez la déformation normale \(\epsilon\), la contrainte en
-  traction \(\sigma\) et son module d'e Young'elasticité \(E\).
+  traction \(\sigma\) et son module de Young d'elasticité \(E\).
 \item
   A quel matériau pur ce module de Young peut-il correspondre ?
 \end{enumerate}
@@ -245,7 +245,6 @@ poteau}\label{exercise-3-compression-poteau}}
 
 Un poteau de chêne (module de Young \(E= 12~GPa\)) de \(3~m\) est
 utilisé pour supporter une charge compressive dans le sens des fibres.
-
 La section du poteau est carrée et vaut \(235~mm \times 235~mm\). Une
 masse de \(20~kg\) est appliquée sur la partie supérieure du poteau.
 
