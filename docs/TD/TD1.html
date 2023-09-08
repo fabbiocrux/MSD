@@ -172,7 +172,7 @@ window.MathJax = {
   <li><a href="#exercise-1-contrainte-en-traction" id="toc-exercise-1-contrainte-en-traction" class="nav-link active" data-scroll-target="#exercise-1-contrainte-en-traction"><span class="header-section-number">1</span> Exercise 1: Contrainte en traction</a></li>
   <li><a href="#exercise-2-contrainte-de-cisallement" id="toc-exercise-2-contrainte-de-cisallement" class="nav-link" data-scroll-target="#exercise-2-contrainte-de-cisallement"><span class="header-section-number">2</span> Exercise 2: Contrainte de Cisallement</a></li>
   <li><a href="#exercise-3-compression-poteau" id="toc-exercise-3-compression-poteau" class="nav-link" data-scroll-target="#exercise-3-compression-poteau"><span class="header-section-number">3</span> Exercise 3: Compression poteau</a></li>
-  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4"><span class="header-section-number">4</span> Exercise 4</a></li>
+  <li><a href="#exercise-4-analysé-de-lessaie-de-traction" id="toc-exercise-4-analysé-de-lessaie-de-traction" class="nav-link" data-scroll-target="#exercise-4-analysé-de-lessaie-de-traction"><span class="header-section-number">4</span> Exercise 4: Analysé de l’essaie de traction</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="TD1.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -199,31 +199,81 @@ window.MathJax = {
 
 <section id="exercise-1-contrainte-en-traction" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Exercise 1: Contrainte en traction</h1>
-<p>Soit une force <span class="math inline">\(F\)</span> de 144 <span class="math inline">\(kN\)</span> à une tige de longeur initiale de 4<span class="math inline">\(m\)</span> d’un matériaux à determiner. Cette dernière s’allonge de <span class="math inline">\(2mm\)</span>. La tige a une section carré de <span class="math inline">\(20cm \times 20cm\)</span>.</p>
-<div class="columns">
-<div class="column" style="width:40%;">
+<p>Soit une force <span class="math inline">\(F\)</span> de 1440 <span class="math inline">\(kN\)</span> à une tige de longeur initiale de 4<span class="math inline">\(m\)</span>. Cette tige a une section carré de <span class="math inline">\(20cm \times 20cm\)</span> et s’allonge de <span class="math inline">\(2mm\)</span>. Le matériaux est à determiner.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../assets/img/TD1/Ex1.png" class="img-fluid figure-img" style="width:3cm"></p>
+<p><img src="../assets/img/TD1/Ex1.png" class="img-fluid figure-img" style="width:5cm"></p>
 </figure>
 </div>
-</div><div class="column" style="width:60%;">
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
 <ol type="1">
-<li>Calculez la déformation normale <span class="math inline">\(\epsilon\)</span>, la contrainte en traction <span class="math inline">\(\sigma\)</span> et son module d’e Young’elasticité <span class="math inline">\(E\)</span>.</li>
+<li><p>Calculez la déformation normale <span class="math inline">\(\epsilon\)</span>, la contrainte en traction <span class="math inline">\(\sigma\)</span> et son module d’e Young’elasticité <span class="math inline">\(E\)</span>.</p></li>
+<li><p>A quel matériau pur ce module de Young peut-il correspondre ?</p></li>
 </ol>
+</div>
 </div>
 </div>
 </section>
 <section id="exercise-2-contrainte-de-cisallement" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Exercise 2: Contrainte de Cisallement</h1>
-<p>Calculez la déformation tangentielle (demi distorsion angulaire) d’une tige <strong><em>d’alluminium</em></strong> de <span class="math inline">\(3m\)</span> de long et de <span class="math inline">\(1cm^{2}\)</span> de section qui est soumise à un effort transversal de <span class="math inline">\(100kN\)</span></p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/img/TD1/Ex2.png" class="img-fluid figure-img" style="width:5cm"></p>
+</figure>
+</div>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
+<p>Calculez la déformation tangentielle (demi distorsion angulaire) d’une tige d’alluminium de <span class="math inline">\(3~m\)</span> de long et de <span class="math inline">\(1~cm^{2}\)</span> de section qui est soumise à un effort transversal de <span class="math inline">\(100~kN\)</span></p>
+</div>
+</div>
+</div>
 </section>
 <section id="exercise-3-compression-poteau" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Exercise 3: Compression poteau</h1>
-<p>Un poteau de chêne (module de Young <span class="math inline">\(E=12GPa\)</span>) de <span class="math inline">\(3m\)</span></p>
+<p>Un poteau de chêne (module de Young <span class="math inline">\(E= 12~GPa\)</span>) de <span class="math inline">\(3~m\)</span> est utilisé pour supporter une charge compressive dans le sens des fibres.</p>
+<p>La section du poteau est carrée et vaut <span class="math inline">\(235~mm \times 235~mm\)</span>. Une masse de <span class="math inline">\(20~kg\)</span> est appliquée sur la partie supérieure du poteau.</p>
+<ol type="1">
+<li>Calculer la valeur de la <em>contrainte normale</em> imposée par la masse ?</li>
+<li>En déduire la valeur de la <em>déformation normale</em> ?</li>
+<li>Quelle est la valeur de la longueur lorsque le poteau est déformé ?</li>
+</ol>
 </section>
-<section id="exercise-4" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Exercise 4</h1>
+<section id="exercise-4-analysé-de-lessaie-de-traction" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Exercise 4: Analysé de l’essaie de traction</h1>
+<p>Un test de traction est réalisé sur une éprouvette parallélépipède de longueur <span class="math inline">\(L_{0}= 10~cm\)</span> et de section <span class="math inline">\(4~cm^{2}\)</span>.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p>Le matériau considéré est <em>fragile</em> et l’essai est effectué jusqu’à la rupture sur une éprouvette parallélépipédique. La courbe de l’essai de traction représenté par la force F en fonction de l’allongement <span class="math inline">\(\Delta L\)</span> est présentée ci-dessous :</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/img/TD1/Ex4.png" class="img-fluid figure-img" style="width:5cm"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<ol type="1">
+<li>Déterminer la <em>rigidité</em> de la structure de l’éprouvette.</li>
+<li>D’après la courbe <span class="math inline">\(F=f(\Delta L)\)</span>, déterminer la courbe de contrainte <span class="math inline">\(\sigma\)</span> en fonction de la déformation <span class="math inline">\(\epsilon\)</span>, puis déterminer la valeur du module de Young ainsi que le matériau associé ?</li>
+<li>Soit une éprouvette composée du même matériau, de même longueur mais de section deux fois supérieure.</li>
+</ol>
+<ul>
+<li>Tracer la contrainte en fonction de la déformation ainsi que la force en fonction de l’allongement.</li>
+<li>Tracer sur les mêmes graphiques avec cette fois-ci une éprouvette de même section mais de longueur double <span class="math inline">\(L_{0}= 20~cm\)</span>.</li>
+</ul>
+<ol start="4" type="1">
+<li>Exprimer la relation reliant rigidité de la structure avec la section, la longueur de l’éprouvette et le module de Young peut être déduite.</li>
+</ol>
 
 
 </section>

@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="46.543781mm"
-   height="54.958458mm"
-   viewBox="0 0 46.543781 54.958458"
+   width="54.958454mm"
+   height="39.19022mm"
+   viewBox="0 0 54.958454 39.19022"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
-   sodipodi:docname="Ex1.svg"
+   sodipodi:docname="Ex2.svg"
    inkscape:export-filename="/Users/fabio/Documents/8-Enseñanza/MSD/assets/img/TD1/Ex1.png"
    inkscape:export-xdpi="150.07376"
    inkscape:export-ydpi="150.07376"
@@ -27,13 +27,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="3.2554688"
-     inkscape:cx="54.830813"
-     inkscape:cy="134.85001"
-     inkscape:window-width="1680"
-     inkscape:window-height="997"
+     inkscape:zoom="6.5109376"
+     inkscape:cx="141.07031"
+     inkscape:cy="70.496759"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      fit-margin-top="0"
@@ -42,6 +42,58 @@
      fit-margin-bottom="0" />
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker3524"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path3252" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker3515"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path3255" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path3249" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3225"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect2819"
+       is_visible="true"
+       lpeversion="1" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient5470">
@@ -141,7 +193,7 @@
        x2="79.847527"
        y2="21.953173"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.68583718,0,0,0.55771391,50.292802,9.9637602)" />
+       gradientTransform="matrix(0.68583718,0,0,0.55771391,-106.54192,67.319254)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5470"
@@ -151,74 +203,100 @@
        x2="110"
        y2="47.471066"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-0.52916667,-1.0583333)" />
+       gradientTransform="translate(-52.636107,56.29716)" />
   </defs>
   <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-87.5,-22.527863)">
+     transform="translate(-79.883357,-30.144505)">
     <rect
        style="opacity:0.8;fill:url(#linearGradient5472);fill-opacity:1;stroke:none;stroke-width:2"
        id="rect846"
        width="8"
        height="38"
-       x="100.47083"
-       y="27.412731"
-       ry="0" />
+       x="48.363892"
+       y="84.768227"
+       ry="0"
+       transform="matrix(0,1,1,0,0,0)" />
     <rect
        style="opacity:0.8;fill:url(#linearGradient1226);fill-opacity:1;stroke:none;stroke-width:2"
        id="rect994"
        width="35"
        height="5"
-       x="87.5"
-       y="22.527863" />
+       x="-69.334724"
+       y="79.883354"
+       transform="rotate(-90)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart)"
-       d="M 104.83548,76.500981 V 66.386431"
+       d="M 122.65731,47.002349 V 36.887809"
        id="path1377"
        inkscape:path-effect="#path-effect1379"
-       inkscape:original-d="m 104.83548,76.500981 c 0.038,-3.371782 -0.0386,-6.743298 0,-10.11455"
+       inkscape:original-d="m 122.65731,47.002349 c 0.038,-3.37178 -0.0386,-6.74329 0,-10.11454"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.05;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="106.69143"
-       y="76.873856"
+       x="112.40293"
+       y="35.449612"
        id="text2904"><tspan
          sodipodi:role="line"
          id="tspan2902"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:3.52778px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium';stroke-width:0.264583"
-         x="106.69143"
-         y="76.873856">F = 1440 kN</tspan></text>
+         x="112.40293"
+         y="35.449612">F = 100 kN</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
-       d="M 95.7644,64.69001 V 29.124857"
+       d="M 122.04551,61.070324 H 85.422018"
        id="path4488"
        inkscape:path-effect="#path-effect4492"
-       inkscape:original-d="m 95.7644,64.69001 c 0.133617,-11.855984 -0.135727,-23.711033 0,-35.565153"
+       inkscape:original-d="M 122.04551,61.070324 H 85.422018"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.05;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="88.065155"
-       y="47.584366"
+       x="101.38103"
+       y="60.719101"
        id="text4504"><tspan
          sodipodi:role="line"
          id="tspan4502"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';stroke-width:0.264583"
-         x="88.065155"
-         y="47.584366">4m</tspan></text>
+         x="101.38103"
+         y="60.719101">3m</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.05;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="101.80038"
-       y="68.715477"
-       id="text8631"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.05;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583;fill:#aa0000"
+       x="129.75218"
+       y="51.883354"
+       id="text4504-8"><tspan
          sodipodi:role="line"
-         id="tspan8629"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';stroke-width:0.264583"
-         x="101.80038"
-         y="68.715477">z</tspan></text>
+         id="tspan4502-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';stroke-width:0.264583;fill:#aa0000"
+         x="129.75218"
+         y="51.883354">x</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 122.79576,63.58855 -0.0275,-7.224659"
+       id="path2817"
+       inkscape:path-effect="#path-effect2819"
+       inkscape:original-d="m 122.79576,63.58855 c -0.009,-2.407955 -0.0181,-4.816176 -0.0275,-7.224659" />
+    <path
+       style="fill:none;stroke:#aa0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker3524);marker-end:url(#marker3515)"
+       d="m 122.8364,60.426675 -0.12191,-8.046076 10.76873,-0.121911"
+       id="path3223"
+       inkscape:path-effect="#path-effect3225"
+       inkscape:original-d="m 122.8364,60.426675 -0.12191,-8.046076 10.76873,-0.121911"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.05;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583;fill:#aa0000"
+       x="123.19214"
+       y="62.018799"
+       id="text3876"><tspan
+         sodipodi:role="line"
+         id="tspan3874"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';stroke-width:0.264583;fill:#aa0000"
+         x="123.19214"
+         y="62.018799">y</tspan></text>
   </g>
 </svg>

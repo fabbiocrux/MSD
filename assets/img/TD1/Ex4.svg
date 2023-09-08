@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg7962"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="Ex4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7964"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.3019641"
+     inkscape:cx="309.08388"
+     inkscape:cy="467.42693"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs7959">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path131585"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path131588"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       id="text17311-7-2"
+       y="150.92082"
+       x="28.149361"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         y="150.92082"
+         x="28.149361"
+         id="tspan17313-7-0"
+         sodipodi:role="line"
+         style="font-size:2.64583px;line-height:1.25;stroke-width:0.264583"><tspan
+   style="font-size:5.29167px;stroke-width:0.264583"
+   id="tspan17937-9">σ</tspan> (Stress)</tspan></text>
+    <g
+       id="g76251"
+       inkscape:export-filename="/Users/fabbiocrux.ms/Dropbox/Fabio_Cruz/Soutenance/Figures/Chapter-3/Diagram.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       transform="matrix(0.26458333,0,0,0.26458333,260.68455,-137.67228)">
+      <g
+         transform="translate(-82.857143,-5)"
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/fabbiocrux.ms/Dropbox/Fabio_Cruz/Soutenance/Figures/Chapter-3/Diagram.png"
+         id="g76187">
+        <g
+           id="g17965"
+           inkscape:export-filename="/Users/fabbiocrux.ms/Dropbox/Fabio_Cruz/Soutenance/Figures/Chapter-3/Diagram.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <g
+             transform="matrix(0.97477105,0,0,1,-22.088754,0)"
+             id="g17496">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1.01286px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+               d="m -871.06462,819.05028 0.48253,206.79542 305.98372,-0.4182"
+               id="path16469"
+               inkscape:connector-curvature="0" />
+            <path
+               style="fill:none;stroke:#009900;stroke-width:2.02572;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m -870.63379,1025.3003 c 36.1579,-59.08052 83.99738,-181.57522 108.4737,-177.24142 22.74682,-2.1128 22.21734,22.2087 42.08721,24.5902 l 124.08288,6.977 0.50508,15.6574"
+               id="path16471"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="ccccc" />
+          </g>
+          <path
+             sodipodi:nodetypes="cccccc"
+             inkscape:connector-curvature="0"
+             d="M -603.14551,1025.7353 V 879.94278 H -870.8795 m 109.06545,145.79252 V 847.05108 h -109.56879"
+             style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 1;stroke-dashoffset:0;stroke-opacity:1"
+             id="path17277-7" />
+          <g
+             id="g17501">
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+               x="-882.36206"
+               y="848.33606"
+               id="text17311"><tspan
+                 sodipodi:role="line"
+                 id="tspan17313"
+                 x="-882.36206"
+                 y="848.33606"
+                 style="font-size:10px;line-height:1.25">σ<tspan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="tspan17315">m</tspan></tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+               x="-881.79712"
+               y="880.01453"
+               id="text17311-0"><tspan
+                 sodipodi:role="line"
+                 id="tspan17313-6"
+                 x="-881.79712"
+                 y="880.01453"
+                 style="font-size:10px;line-height:1.25">σ<tspan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="tspan17341">B</tspan></tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+               x="-881.67175"
+               y="954.65063"
+               id="text17311-5"><tspan
+                 sodipodi:role="line"
+                 id="tspan17313-4"
+                 x="-881.67175"
+                 y="954.65063"
+                 style="font-size:10px;line-height:1.25">σ<tspan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="tspan17484">2</tspan></tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+               x="-881.78125"
+               y="1008.0049"
+               id="text17311-0-6"><tspan
+                 sodipodi:role="line"
+                 id="tspan17313-6-8"
+                 x="-881.78125"
+                 y="1008.0049"
+                 style="font-size:10px;line-height:1.25">σ<tspan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="tspan17486">1</tspan></tspan></text>
+          </g>
+          <g
+             id="g17515">
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+               x="-765.6344"
+               y="1041.656"
+               id="text17343"><tspan
+                 sodipodi:role="line"
+                 id="tspan17345"
+                 x="-765.6344"
+                 y="1041.656"
+                 style="font-size:10px;line-height:1.25">ε<tspan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="tspan17347">m</tspan></tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+               x="-606.10455"
+               y="1039.656"
+               id="text17343-6"><tspan
+                 sodipodi:role="line"
+                 id="tspan17345-4"
+                 x="-606.10455"
+                 y="1039.656"
+                 style="font-size:10px;line-height:1.25">ε<tspan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="tspan17373">B</tspan></tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+               x="-862.92072"
+               y="1031.656"
+               id="text17343-5"><tspan
+                 sodipodi:role="line"
+                 id="tspan17345-7"
+                 x="-862.92072"
+                 y="1031.656"
+                 style="font-size:10px;line-height:1.25">ε<tspan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="tspan17441">1</tspan></tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+               x="-836.03278"
+               y="1031.656"
+               id="text17343-5-5"><tspan
+                 sodipodi:role="line"
+                 id="tspan17345-7-0"
+                 x="-836.03278"
+                 y="1031.656"
+                 style="font-size:10px;line-height:1.25">ε<tspan
+   style="font-size:65.0009%;baseline-shift:sub"
+   id="tspan17467">2</tspan></tspan></text>
+          </g>
+          <g
+             id="g17491">
+            <path
+               inkscape:connector-curvature="0"
+               id="path17480"
+               d="m -860.39605,1025.8457 -2.3e-4,-18.3152 -10.98651,-0.022"
+               style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 1;stroke-dashoffset:0;stroke-opacity:1"
+               sodipodi:nodetypes="ccc" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path17482"
+               d="m -833.632,1025.8457 -9.7e-4,-71.83209 -37.7494,-0.0331"
+               style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 1;stroke-dashoffset:0;stroke-opacity:1"
+               sodipodi:nodetypes="ccc" />
+            <path
+               style="fill:none;stroke:#ff0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m -860.58684,1007.2841 26.63753,-53.1885"
+               id="path17488"
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc" />
+            <path
+               sodipodi:nodetypes="ccc"
+               inkscape:connector-curvature="0"
+               id="path76165"
+               d="m -853.26323,994.95825 h 10.50928 v -19.95051"
+               style="fill:none;stroke:#ff0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+             x="-879.17004"
+             y="814.70856"
+             id="text17311-7"><tspan
+               sodipodi:role="line"
+               id="tspan17313-7"
+               x="-879.17004"
+               y="814.70856"
+               style="font-size:10px;line-height:1.25"><tspan
+   id="tspan17937"
+   style="font-size:20px">σ</tspan> (Stress)</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+             x="-571.01013"
+             y="1029.6121"
+             id="text17343-6-1"><tspan
+               sodipodi:role="line"
+               id="tspan17345-4-3"
+               x="-571.01013"
+               y="1029.6121"
+               style="font-size:20px;line-height:80%">ε </tspan><tspan
+               sodipodi:role="line"
+               x="-571.01013"
+               y="1038.7458"
+               id="tspan5309"
+               style="font-size:10px;line-height:80%">(Strain)</tspan></text>
+          <text
+             id="text76171"
+             y="839.35144"
+             x="-772.74146"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+             xml:space="preserve"><tspan
+               y="839.35144"
+               x="-772.74146"
+               id="tspan76173"
+               sodipodi:role="line"
+               style="font-size:10px;line-height:1.25"><tspan
+   style="font-size:20px"
+   id="tspan76175">σ</tspan> (m)</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+             x="-610.24146"
+             y="868.99432"
+             id="text76181"><tspan
+               sodipodi:role="line"
+               id="tspan76183"
+               x="-610.24146"
+               y="868.99432"
+               style="font-size:10px;line-height:1.25"><tspan
+   id="tspan76185"
+   style="font-size:20px">σ</tspan> (b)</tspan></text>
+          <text
+             id="text76241"
+             y="1029.6121"
+             x="-571.01013"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Franklin Gothic Book';-inkscape-font-specification:'Franklin Gothic Book';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+             xml:space="preserve"><tspan
+               style="font-size:20px;line-height:80%"
+               y="1029.6121"
+               x="-571.01013"
+               id="tspan76243"
+               sodipodi:role="line">ε </tspan><tspan
+               style="font-size:10px;line-height:80%"
+               id="tspan76245"
+               y="1038.7458"
+               x="-571.01013"
+               sodipodi:role="line">(Strain)</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Georgia;-inkscape-font-specification:'Georgia, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-865.57635"
+           y="987.49274"
+           id="text76167"><tspan
+             sodipodi:role="line"
+             id="tspan76169"
+             x="-865.57635"
+             y="987.49274"
+             style="font-size:18.75px;line-height:1.17">E</tspan></text>
+        <circle
+           style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3.18898;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76177"
+           cx="-762.5"
+           cy="847.71936"
+           r="3.5714285" />
+        <circle
+           r="3.5714285"
+           cy="880.57648"
+           cx="-602.5"
+           id="circle76179"
+           style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3.18898;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <circle
+           style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3.18898;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle76247"
+           cx="-761.07141"
+           cy="1025.4336"
+           r="3.5714285" />
+        <circle
+           r="3.5714285"
+           cy="1025.4336"
+           cx="-603.07141"
+           id="circle76249"
+           style="opacity:1;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3.18898;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>

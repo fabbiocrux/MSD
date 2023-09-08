@@ -2,35 +2,83 @@
 title: "TD 1: Introduction"
 subtitle: "Objectif: Application de la Loi de Hooke"
 ---
+
 \thispagestyle{fancy}
 
 # Exercise 1: Contrainte en traction
 
-Soit une force $F$ de 144 $kN$ à une tige de longeur initiale de 4$m$ d'un matériaux à determiner. Cette dernière s'allonge de $2mm$. La tige a une section carré de $20cm  \times 20cm$.
+Soit une force $F$ de 1440 $kN$ à une tige de longeur initiale de 4$m$.
+Cette tige a une section carré de $20cm \times 20cm$ et s'allonge de $2mm$. 
+Le matériaux est à determiner. 
 
 
-:::: {.columns}
-::: {.column width="40%"}
-![](../assets/img/TD1/Ex1.png){width=3cm fig-align="center"}
+:::: {layout="[ 40, 60 ]" layout-valign="center"}
+
+::: {#first-column}
+![](../assets/img/TD1/Ex1.png){width=5cm fig-align="center"}
 :::
 
-::: {.column width="60%"}
+::: {#second-column}
 1. Calculez la déformation normale $\epsilon$, la contrainte en traction $\sigma$ et son module d'e Young'elasticité $E$.
+
+2. A quel matériau pur ce module de Young peut-il correspondre ?
+:::
+::::
+
+
+# Exercise 2: Contrainte de Cisallement
+
+:::: {layout="[ 40, 60 ]" layout-valign="center"}
+
+::: {#first-column}
+![](../assets/img/TD1/Ex2.png){width=5cm fig-align="center"}
+:::
+
+::: {#second-column}
+
+Calculez la déformation tangentielle (demi distorsion angulaire) d'une tige d'alluminium de $3~m$ de long et de $1~cm^{2}$ de section qui est soumise à un effort transversal de $100~kN$
+
 :::
 ::::
 
 
 
-# Exercise 2: Contrainte de Cisallement
-
-Calculez la déformation tangentielle (demi distorsion angulaire) d'une tige ***d'alluminium*** de $3m$ de long et de $1cm^{2}$ de section qui est soumise à un effort transversal de $100kN$
-
-
 # Exercise 3: Compression poteau
 
-Un poteau de chêne (module de Young $E=12GPa$) de $3m$
+Un poteau de chêne (module de Young $E= 12~GPa$) de $3~m$ est utilisé pour supporter une charge compressive dans le sens des fibres. 
+
+La section du poteau est carrée et vaut $235~mm \times 235~mm$. 
+Une masse de $20~kg$ est appliquée sur la partie supérieure du poteau.
+
+1.	Calculer la valeur de la *contrainte normale* imposée par la masse ?
+2.	En déduire la valeur de la *déformation normale* ?
+3.	Quelle est la valeur de la longueur lorsque le poteau est déformé ?
 
 
+# Exercise 4: Analysé de l'essaie de traction
 
 
-# Exercise 4
+Un test de traction est réalisé sur une éprouvette parallélépipède de longueur $L_{0}= 10~cm$ et de section $4~cm^{2}$. 
+
+
+:::: {layout="[50, 50 ]" layout-valign="center"}
+
+::: {#first-column}
+Le matériau considéré est *fragile* et l’essai est effectué jusqu’à la rupture sur une éprouvette parallélépipédique. 
+La courbe de l’essai de traction représenté par la force F en fonction de l’allongement $\Delta L$ est présentée ci-dessous :
+
+:::
+
+::: {#second-column}
+![](../assets/img/TD1/Ex4.png){width=5cm fig-align="center"}
+:::
+::::
+
+
+1.	Déterminer la *rigidité* de la structure de l’éprouvette.
+2.	D’après la courbe $F=f(\Delta L)$, déterminer la courbe de contrainte $\sigma$ en fonction de la déformation $\epsilon$, puis déterminer la valeur du module de Young ainsi que le matériau associé ?
+3.	Soit une éprouvette composée du même matériau, de même longueur mais de section deux fois supérieure. 
+  - Tracer la contrainte en fonction de la déformation ainsi que la force en fonction de l’allongement. 
+  - Tracer sur les mêmes graphiques avec cette fois-ci une éprouvette de même section mais de longueur double $L_{0}= 20~cm$.
+4.	Exprimer la relation reliant rigidité de la structure avec la section, la longueur de l’éprouvette et le module de Young peut être déduite.
+
