@@ -3,14 +3,19 @@ title: "TD 2: Matrice de Déformations "
 subtitle: "Objectif: Calculer la matrice"
 ---
 
+\thispagestyle{fancy}
+# Exercice 1
+
+# Exercice 2
+
 # Exercice 3
 
 Soit le vecteur déplacement $\underline{U} = (u, v, w)^\intercal$ en
 tout point du solide de dimension caractéristique $L$, dans le repère
-cartésien:
+cartésien :
 
-```{=tex}
-\begin{align}
+
+\begin{align}\label{eq:1}
    \underline{U}(x,y,z) &= 
       \begin{pmatrix}
          \frac{x^{2}}{L} + 2y \\           
@@ -18,27 +23,37 @@ cartésien:
          -4z
    \end{pmatrix}
 \end{align}
-```
-1.  Calculer la matrice de déformation $\underline{E}$ associé su
-    vecteur de déformation.
+
+1.  Calculer la matrice de déformation $\underline{\underline{E}}$ associé au vecteur de déformation.
 
 ## Solution
 
 ### Calculer la Matrice de Déformations
 
-La matrice est définie comme:
+Le lien mathémathique entre déplacement et déformation est:
 
 $$
- \underline{\underline{E}}(M) = 
+\varepsilon_{ij} = 
+ \frac{1}{2} 
+   \left( \frac{\partial U_{i}}{\partial X_{j}} +
+   \frac{\partial U_{j}}{\partial X_{i}} 
+ \right)
+$${#eq-tenseur-00}
+
+Donc, matrice est définie comme:
+
+$$
+\underline{\underline{E}}(M) = 
 \begin{pmatrix}
 \varepsilon_{xy} & \varepsilon_{xy} & \varepsilon_{xz}\\
 \varepsilon_{yx} & \varepsilon_{yy} & \varepsilon_{yz}\\
 \varepsilon_{xz} & \varepsilon_{zy} & \varepsilon_{zz}\\
 \end{pmatrix}
-$$
+$${#eq-matrice-00}
 
 Donc, on peut exprimer cette tenseur comme suit:
 
+\renewcommand{\arraystretch}{1.4}
 $$
 \underline{\underline{E}}(M) = 
 \begin{pmatrix}
@@ -50,9 +65,9 @@ $$
       \frac{1}{2} ( \frac{\partial w}{\partial y} + \frac{\partial v}{\partial z} )  \\
 \dots &
    \dots &
-      \frac{\partial v}{\partial y}
+      \frac{\partial w}{\partial y}
 \end{pmatrix}
-$$
+$${#eq-matrice-01}
 
 Donc, on peut faire les differents dérives pour le vecteur $\underline U$
 
@@ -61,23 +76,24 @@ $$
 \underline{\underline{E}}(M) = 
 \begin{pmatrix}
 \frac{2x}{L}  & 
-   \frac{1}{2} ( \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x} ) &  
-      \frac{1}{2} ( \frac{\partial u}{\partial z} + \frac{\partial w}{\partial x} )   \\
-\dots &
-   \frac{x}{2 L} &   
-      \frac{1}{2} ( \frac{\partial w}{\partial y} + \frac{\partial v}{\partial z} )  \\
-\dots &
-   \dots &
-      \frac{\partial v}{\partial y}
+   \frac{1}{2} ( \frac{y}{2L} + 2 ) &  
+      0 \\
+\frac{1}{2} ( \frac{y}{2L} + 2 ) &
+   \frac{x}{2L} &   
+      0 \\
+0 &
+   0 &
+      -4
 \end{pmatrix}
-$$
+$${#eq-solution-03}
 
+\renewcommand{\arraystretch}{1}
 
-Voilà la matrice de Déformation pour cette exercice.
+Voilà la matrice de déformation pour cette exercice.
 
-# Exercise 4
+# Exercice 4
 
-Soit un matériau sollicité dont la matrice des déformations $\underline{\underline{E}}$ dans le repère $x,y,z$ connue en tout point d'un solide noté $M$
+Soit la matrice des déformation $\underline{\underline{E}}$ , dans le repère $x,y,z$ connue en tout point d'un solide:
 
 $$
 \underline{\underline{E}}(M) = 
@@ -92,39 +108,49 @@ $$
    0 &
       z
 \end{pmatrix} \times 10^{-5}
-$$
+$${#eq-ex-04}
 
 1. Vérifier les équations de compatibilité
 2. Calculer le vecteur déplacement $\underline{U}(M)$
 
 
 ## Solution
-
 ### Equations de compatibilité
 
 Il y a 6 équation de compatibilité. Elles concernent les dérivés secondes de composants de la matrice de déformation. 
-Les composants de la matrice de déformation sont des fonctiones linaires d'ordre.
+Les composants de la matrice de déformation sont des fonctiones lineaires d'ordre.
 
+
+### Calculer le vecteur déplacement $\underline{U}(M)$
 Les composants **normales** de la matrice :
-
 \begin{align*} 
-\varepsilon_{xx} &= \frac{\partial u}{\partial x} = 2x + 1 \rightarrow u(x,y,z) = x^2 + x + C_{1}(y,z) \\
-\varepsilon_{yy} &= \frac{\partial v}{\partial y} = 0 \rightarrow v(x,y,z) = C_{2}(x,z) \\
-\varepsilon_{zz} &= \frac{\partial w}{\partial z} = 0 \rightarrow w(x,y,z) = \frac{z^2}{2} + C_{3}(x,y) \\
+\varepsilon_{xx} &= \frac{\partial u}{\partial x} = 2x + 1 \xRightarrow{\qquad \int \qquad} u(x,y,z) = x^2 + x + C_{1}(y,z) \\
+\varepsilon_{yy} &= \frac{\partial v}{\partial y} = 0 \xRightarrow{\qquad \int \qquad} v(x,y,z) = C_{2}(x,z) \\
+\varepsilon_{zz} &= \frac{\partial w}{\partial z} = z \xRightarrow{\qquad \int \qquad} w(x,y,z) = \frac{z^2}{2} + C_{3}(x,y) \\
 \end{align*}
 
 
 Les composants **tangentielles** de la matrice :
 
 \begin{align*} 
-\varepsilon_{xy} &= \frac{1}{2} (\frac{\partial v}{\partial x} + \frac{\partial u}{\partial y} ) = 8 \\
-\varepsilon_{xy} &= \frac{1}{2} (\frac{C_{2}(x,z)}{\partial x} + \frac{\partial C_{1}(y,z)}{\partial y}) = 8
+\varepsilon_{xy} &= \frac{1}{2} 
+\left[ 
+      \frac{\partial v}{\partial x} +
+   \frac{\partial u}{\partial y} 
+\right] = 8 \\[5pt]
+\varepsilon_{xy} &= \frac{1}{2} 
+\left[   
+   \frac{\partial }{\partial x} \left( C_{2}(x,z) \right) +   
+   \frac{\partial }{\partial y} \left( C_{1}(y,z) \right)
+\right] = 8
 \end{align*}
+
 
 On mets la constante $C_{1}(y,z)$ en fonctions de $C_{2}(x,z)$:
 
 $$
-\frac{\partial C_{1}(y,z)}{\partial y} = 16- \frac{C_{2}(x,z)}{\partial x} 
+\frac{\partial C_{1}(y,z)}{\partial y} = 16- \frac{ \partial C_{2}(x,z)}{\partial x} 
+\xRightarrow{\qquad} A
 $${#eq-4}
 
 
@@ -134,36 +160,396 @@ On va supposer ici pour simplifier les calculs que $A(z)$ est une constante.
 
 Pour calculer $\varepsilon_{xz}$, considerons
 
+\begin{align}
+C_{1}(y,z) &= Ay + C_{11}(z)  \\
+C_{2}(x,z) &= (16 - A)x + C_{22}(z) 
+\end{align}
 
-$$
-C_{1}(y,z) = Ay + C_{11}(z)
-C_{2}(x,z) = (16 - A)x + C_{22}(z)
-$$ {#eq-6}
 
 Donc, nous avons pour $\varepsilon_{xz}$:
 
 \begin{align}
-\varepsilon_{xz} &= \frac{1}{2} \left[ \frac{\partial u}{\partial z}  +  \frac{\partial w}{\partial x} \right] = 0 \\
+\varepsilon_{xz} &= \frac{1}{2} \left[ \frac{\partial u}{\partial z}  +  \frac{\partial w}{\partial x} \right] = 0 \\[5pt]
 \varepsilon_{xz} &= \frac{1}{2}
    \left[ 
-   \left( \frac{\partial}{\partial z}(x^2 + x + C_{1}(y,z)) \right) + \left( \frac{\partial (\frac{z^2}{2} + C_{3}(x,y)) }{\partial z}  \right)
-   \right] = 0  \\
-c & = d + e 
+   \frac{\partial}{\partial z} \left( \cancel{x^2} + \cancel{x} + C_{1}(y,z) \right) 
+   + 
+   \frac{\partial }{\partial x} \left( \cancel{\frac{z^2}{2}} + C_{3}(x,y) \right)
+   \right] = 0  \\[5pt]
+\frac{\partial }{\partial z} \left( C_{3}(x,y) \right) &= 
+- \frac{\partial}{\partial z} \left(C_{1}(y,z) \right)   \\[5pt]
+\frac{\partial }{\partial z} \left( C_{3}(x,y) \right) &= 
+- \frac{\partial}{\partial z} \left(\cancel{Ay} + C_{11}(z) \right)
 \end{align}
 
 
 
+Donc, nous avons pour $\varepsilon_{yz}$, considerons
+
+\begin{align}
+C_{3}(x,y) &= \beta x + C_{33}(y)  \\
+C_{11}(x,z) &= -\beta z + \alpha
+\end{align}
+
+
+Donc, 
+
+
+\begin{align}
+\varepsilon_{yz} &= 
+   \frac{1}{2} 
+   \left[ 
+         \frac{\partial v}{\partial z}  +  \frac{\partial w}{\partial y} \right] = 0 
+         \\[5pt]
+\varepsilon_{yz} &= 
+   \frac{1}{2}
+      \left[ 
+         \frac{\partial}{\partial z} \left( C_{22}(z) \right) 
+   + 
+   \frac{\partial }{\partial x} \left( C_{33}(y) \right) 
+   \right] = 0  
+   \\[5pt]
+\frac{\partial }{\partial z} \left( C_{22}(z) \right) &= 
+- \frac{\partial}{\partial y} \left( C_{33}(y) \right)   
+\end{align}
+
+On peut en deduire:
+
+\begin{align}
+C_{22}(z) &= Cz + \beta  \\[5pt]
+C_{33}(y) &= -Cy + \gamma
+\end{align}
+
+
+Au final,
+
+\begin{align*} 
+u(x,y,z) = x^2 + x + Ay + -\beta z + \alpha \\
+v(x,y,z) = (16 - A)x + Cz + \beta  \\
+w(x,y,z) = \frac{z^2}{2} + \beta x + -Cy + \gamma \\
+\end{align*}
 
 
 
 
+# Exercice 5
+Soit une rosette delta en forme de triangle équilateral, permettant de mesurer les dilatations logitudinales selon les trois directions parallèles aux trois côtés du triangle.
+
+Ces dernières sont disposées à la surface d'un matériau homogène et isotrope para rapport à un repère $0, x,y$.
+
+1. Determiner les tenseur des déformations planes si les valeurs mesurés sont:
+$\varepsilon_{a} = -0.4 ; \varepsilon_{b} = 0.5 ; \varepsilon_{c} = 0.2$
+
+
+## Solution
+### Determination de la matrice des déformations
+
+$$
+\underline{\underline{E}}(M) = 
+\begin{pmatrix}
+\varepsilon_{xx} & \varepsilon_{xy} \\
+\varepsilon_{yx} & \varepsilon_{yy} \\
+\end{pmatrix}
+$${#eq-matrice-00}
+
+Le vecteur de déformation est donne par:
+
+$$
+d(M,i) = \underline{\underline{E}}(M) \cdot i
+$$
+
+On va calculer le vecteur de deformation:
+
+$$
+\varepsilon = \underline{n}^\intercal \cdot \underline{\underline{E}}(M) \cdot \underline{n}
+$$
+
+### Deformation dans le $\varepsilon_{a}$
+
+$$
+\underline{n_{a}} = 
+\begin{pmatrix}
+\cos(0) \\
+\cos(0) \\
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y \\
+\end{pmatrix}
+\equiv
+\begin{pmatrix}
+1 \\
+0 \\
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y \\
+\end{pmatrix}
+$${#eq-matrice-00}
+
+$$
+\underline{n_{a}}^\intercal = 
+\begin{bmatrix}
+1 & 0 
+\end{bmatrix}
+$$
+
+Donc, 
+
+$$
+\varepsilon_{a} = 
+\begin{bmatrix}
+1 & 0 
+\end{bmatrix}
+\cdot
+\left[
+\begin{pmatrix}
+\varepsilon_{xx} & \varepsilon_{xy} \\
+\varepsilon_{yx} & \varepsilon_{yy} \\
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+1 \\
+0 \\
+\end{pmatrix}
+\right]
+$${#eq-matrice-00}
+
+
+$$
+\varepsilon_{a} = 
+\begin{bmatrix}
+1 & 0 
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+\varepsilon_{xx}\\
+\varepsilon_{yx}\\
+\end{bmatrix}
+$${#eq-matrice-00}
+
+Donc,
+
+$$
+\varepsilon_{a} = \varepsilon_{xx}
+$$
+
+
+### Deformation dans le $\varepsilon_{b}$
+
+
+
+$$
+\varepsilon_{b} = 
+\begin{pmatrix}
+\cos(60) \\
+\cos(60) \\
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y \\
+\end{pmatrix}
+\equiv
+\begin{pmatrix}
+\frac12 \\
+\frac{\sqrt{3}}{2} \\
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y \\
+\end{pmatrix}
+$${#eq-matrice-00}
+
+
+
+$$
+\underline{n_{b}}^\intercal = 
+\begin{bmatrix}
+\frac12 & \frac{\sqrt{3}}{2}
+\end{bmatrix}
+$$
+
+
+Donc,
+
+$$
+\varepsilon_{b} = 
+\frac{1}{2}
+\cdot
+\begin{bmatrix}
+1 & \sqrt{3}
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+\varepsilon_{xx} & \varepsilon_{xy} \\
+\varepsilon_{yx} & \varepsilon_{yy} \\
+\end{bmatrix}
+\cdot
+\frac{1}{2}
+\cdot
+\begin{pmatrix}
+1 \\
+\sqrt{3} \\
+\end{pmatrix}
+$${#eq-matrice-20}
+
+
+
+$$
+\varepsilon_{b} = 
+\frac{1}{4}
+\cdot
+\begin{bmatrix}
+1 & \sqrt{3}
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+\varepsilon_{xx} & \varepsilon_{xy} \\
+\varepsilon_{yx} & \varepsilon_{yy} \\
+\end{bmatrix}
+\cdot
+\begin{pmatrix}
+1 \\
+\sqrt{3} \\
+\end{pmatrix}
+$${#eq-matrice-20}
+
+
+
+$$
+\varepsilon_{b} = 
+\frac{1}{4}
+\cdot
+\begin{bmatrix}
+1 & \sqrt{3}
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+\varepsilon_{xx} + \sqrt{3} \varepsilon_{xy} \\
+\varepsilon_{yx} + \sqrt{3} \varepsilon_{yy} \\
+\end{bmatrix}
+$${#eq-matrice-20}
 
 
 
 
+$$
+\varepsilon_{b} = 
+\frac{1}{4}
+\cdot
+\begin{bmatrix}
+\varepsilon_{xx} + \sqrt{3} \varepsilon_{xy} +
+\sqrt{3} \left( \varepsilon_{yx} + \sqrt{3} \varepsilon_{yy} \right) \\
+\end{bmatrix}
+$${#eq-matrice-20}
 
 
 
 
+$$
+\varepsilon_{b} = 
+\frac{1}{4}
+\cdot
+\begin{bmatrix}
+\varepsilon_{xx} + \sqrt{3} \varepsilon_{xy} +
+\sqrt{3} \varepsilon_{yx} + 3 \varepsilon_{yy}  \\
+\end{bmatrix}
+$${#eq-matrice-20}
 
 
+
+$$
+\varepsilon_{b} = 
+\frac{1}{4}
+\cdot
+\begin{bmatrix}
+\varepsilon_{xx} + 2\sqrt{3} \varepsilon_{xy} + 3 \varepsilon_{yy}  \\
+\end{bmatrix}
+$${#eq-matrice-20}
+
+
+### Deformation dans le $\varepsilon_{c}$
+
+Directement
+
+
+$$
+\varepsilon_{c} = 
+\frac{1}{2}
+\cdot
+\begin{bmatrix}
+- 1 & \sqrt{3}
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+\varepsilon_{xx} & \varepsilon_{xy} \\
+\varepsilon_{yx} & \varepsilon_{yy} \\
+\end{bmatrix}
+\cdot
+\frac{1}{2}
+\cdot
+\begin{pmatrix}
+- 1 \\
+\sqrt{3} \\
+\end{pmatrix}
+$${#eq-matrice-20}
+
+
+
+
+$$
+\varepsilon_{c} = 
+\frac{1}{4}
+\cdot
+\begin{bmatrix}
+- 1 & \sqrt{3}
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+- \varepsilon_{xx} & \sqrt{3} \varepsilon_{xy} \\
+- \varepsilon_{yx} & \sqrt{3} \varepsilon_{yy} \\
+\end{bmatrix}
+\cdot
+$${#eq-matrice-20}
+
+
+
+
+$$
+\varepsilon_{c} = 
+\frac{1}{4}
+\cdot
+\begin{bmatrix}
+ \varepsilon_{xx} - \sqrt{3} \varepsilon_{xy} 
+- \sqrt{3} \varepsilon_{yx} + 3 \varepsilon_{yy} \\
+\end{bmatrix}
+\cdot
+$${#eq-matrice-20}
+
+
+
+$$
+\varepsilon_{c} = 
+\frac{1}{4}
+\cdot
+\begin{bmatrix}
+ \varepsilon_{xx} - 2\sqrt{3} \varepsilon_{xy} + 3 \varepsilon_{yy} \\
+\end{bmatrix}
+$${#eq-matrice-20}
+
+
+
+
+Finalement, un système de 2 equations avec 2 incognites :
+
+\begin{align}
+4\varepsilon_{c} - \varepsilon_{xx} &=  - 2\sqrt{3} \varepsilon_{xy} + 3 \varepsilon_{yy} \\
+4\varepsilon_{b} - \varepsilon_{xx} &=   2\sqrt{3} \varepsilon_{xy} + 3 \varepsilon_{yy} 
+\end{align}
+
+
+Pour résoudre,
+
+1. Trouver le determinant de la matrice
+2. Trouver les cofacteurs. 
+3. Determiner la matrice inverse. 

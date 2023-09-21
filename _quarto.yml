@@ -124,23 +124,23 @@ format:
           </script>    
 #      css: assets/styles.css  
   pdf:
-    documentclass: article
-    fontsize: 12pt
+    documentclass: extarticle
+    fontsize: 14pt
     number-sections: true
     keep-tex: false
     colorlinks: true
     geometry:
-      - top=30mm
-      - left=20mm
-      - right=20mm
-      - bottom=30mm 
+      - top=20mm
+      - left=15mm
+      - right=15mm
+      - bottom=20mm 
     include-in-header:
       - file: "assets/latex.tex"
 
 execute:
   cache: true
   echo: false
-#freeze: true
+  #freeze: true
 
 bibliography: references.bib
 
