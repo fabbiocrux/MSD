@@ -182,6 +182,13 @@ window.MathJax = {
   <li><a href="#calculer-la-matrice-de-déformations" id="toc-calculer-la-matrice-de-déformations" class="nav-link" data-scroll-target="#calculer-la-matrice-de-déformations"><span class="header-section-number">1.1.1</span> Calculer la Matrice de Déformations</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4"><span class="header-section-number">2</span> Exercise 4</a>
+  <ul class="collapse">
+  <li><a href="#solution-1" id="toc-solution-1" class="nav-link" data-scroll-target="#solution-1"><span class="header-section-number">2.1</span> Solution</a>
+  <ul class="collapse">
+  <li><a href="#equations-de-compatibilité" id="toc-equations-de-compatibilité" class="nav-link" data-scroll-target="#equations-de-compatibilité"><span class="header-section-number">2.1.1</span> Equations de compatibilité</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="TD2.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -209,14 +216,14 @@ window.MathJax = {
 <section id="exercice-3" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Exercice 3</h1>
 <p>Soit le vecteur déplacement <span class="math inline">\(\underline{U} = (u, v, w)^\intercal\)</span> en tout point du solide de dimension caractéristique <span class="math inline">\(L\)</span>, dans le repère cartésien:</p>
-<p><span class="math display">\[\begin{align}
+<span class="math display">\[\begin{align}
    \underline{U}(x,y,z) &amp;=
       \begin{pmatrix}
          \frac{x^{2}}{L} + 2y \\           
          \frac{xy}{2L} \\           
          -4z
    \end{pmatrix}
-\end{align}\]</span></p>
+\end{align}\]</span>
 <ol type="1">
 <li>Calculer la matrice de déformation <span class="math inline">\(\underline{E}\)</span> associé su vecteur de déformation.</li>
 </ol>
@@ -226,8 +233,103 @@ window.MathJax = {
 <h3 data-number="1.1.1" class="anchored" data-anchor-id="calculer-la-matrice-de-déformations"><span class="header-section-number">1.1.1</span> Calculer la Matrice de Déformations</h3>
 <p>La matrice est définie comme:</p>
 <p><span class="math display">\[
-\epsilon = \frac{1}{2}
+\underline{\underline{E}}(M) =
+\begin{pmatrix}
+\varepsilon_{xy} &amp; \varepsilon_{xy} &amp; \varepsilon_{xz}\\
+\varepsilon_{yx} &amp; \varepsilon_{yy} &amp; \varepsilon_{yz}\\
+\varepsilon_{xz} &amp; \varepsilon_{zy} &amp; \varepsilon_{zz}\\
+\end{pmatrix}
 \]</span></p>
+<p>Donc, on peut exprimer cette tenseur comme suit:</p>
+<p><span class="math display">\[
+\underline{\underline{E}}(M) =
+\begin{pmatrix}
+\frac{\partial u}{\partial x}  &amp;
+   \frac{1}{2} ( \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x} ) &amp;  
+      \frac{1}{2} ( \frac{\partial u}{\partial z} + \frac{\partial w}{\partial x} )   \\
+\dots &amp;
+   \frac{\partial v}{\partial y} &amp;   
+      \frac{1}{2} ( \frac{\partial w}{\partial y} + \frac{\partial v}{\partial z} )  \\
+\dots &amp;
+   \dots &amp;
+      \frac{\partial v}{\partial y}
+\end{pmatrix}
+\]</span></p>
+<p>Donc, on peut faire les differents dérives pour le vecteur <span class="math inline">\(\underline U\)</span></p>
+<p><span class="math display">\[
+\underline{\underline{E}}(M) =
+\begin{pmatrix}
+\frac{2x}{L}  &amp;
+   \frac{1}{2} ( \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x} ) &amp;  
+      \frac{1}{2} ( \frac{\partial u}{\partial z} + \frac{\partial w}{\partial x} )   \\
+\dots &amp;
+   \frac{x}{2 L} &amp;   
+      \frac{1}{2} ( \frac{\partial w}{\partial y} + \frac{\partial v}{\partial z} )  \\
+\dots &amp;
+   \dots &amp;
+      \frac{\partial v}{\partial y}
+\end{pmatrix}
+\]</span></p>
+<p>Voilà la matrice de Déformation pour cette exercice.</p>
+</section>
+</section>
+</section>
+<section id="exercise-4" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Exercise 4</h1>
+<p>Soit un matériau sollicité dont la matrice des déformations <span class="math inline">\(\underline{\underline{E}}\)</span> dans le repère <span class="math inline">\(x,y,z\)</span> connue en tout point d’un solide noté <span class="math inline">\(M\)</span></p>
+<p><span class="math display">\[
+\underline{\underline{E}}(M) =
+\begin{pmatrix}
+2x + 1  &amp;
+   8 &amp;  
+      0 \\
+8 &amp;
+   0 &amp;   
+   0 \\
+0 &amp;
+   0 &amp;
+      z
+\end{pmatrix} \times 10^{-5}
+\]</span></p>
+<ol type="1">
+<li>Vérifier les équations de compatibilité</li>
+<li>Calculer le vecteur déplacement <span class="math inline">\(\underline{U}(M)\)</span></li>
+</ol>
+<section id="solution-1" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="solution-1"><span class="header-section-number">2.1</span> Solution</h2>
+<section id="equations-de-compatibilité" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="equations-de-compatibilité"><span class="header-section-number">2.1.1</span> Equations de compatibilité</h3>
+<p>Il y a 6 équation de compatibilité. Elles concernent les dérivés secondes de composants de la matrice de déformation. Les composants de la matrice de déformation sont des fonctiones linaires d’ordre.</p>
+<p>Les composants <strong>normales</strong> de la matrice :</p>
+<p><span class="math display">\[\begin{align*}
+\varepsilon_{xx} &amp;= \frac{\partial u}{\partial x} = 2x + 1 \rightarrow u(x,y,z) = x^2 + x + C_{1}(y,z) \\
+\varepsilon_{yy} &amp;= \frac{\partial v}{\partial y} = 0 \rightarrow v(x,y,z) = C_{2}(x,z) \\
+\varepsilon_{zz} &amp;= \frac{\partial w}{\partial z} = 0 \rightarrow w(x,y,z) = \frac{z^2}{2} + C_{3}(x,y) \\
+\end{align*}\]</span></p>
+<p>Les composants <strong>tangentielles</strong> de la matrice :</p>
+<p><span class="math display">\[\begin{align*}
+\varepsilon_{xy} &amp;= \frac{1}{2} (\frac{\partial v}{\partial x} + \frac{\partial u}{\partial y} ) = 8 \\
+\varepsilon_{xy} &amp;= \frac{1}{2} (\frac{C_{2}(x,z)}{\partial x} + \frac{\partial C_{1}(y,z)}{\partial y}) = 8
+\end{align*}\]</span></p>
+<p>On mets la constante <span class="math inline">\(C_{1}(y,z)\)</span> en fonctions de <span class="math inline">\(C_{2}(x,z)\)</span>:</p>
+<p><span id="eq-4"><span class="math display">\[
+\frac{\partial C_{1}(y,z)}{\partial y} = 16- \frac{C_{2}(x,z)}{\partial x}
+\tag{1}\]</span></span></p>
+<p><span class="math inline">\(A\)</span> est une constante même si en toute rigeur cette dernière devrait dépendre de <span class="math inline">\(z: A(z)\)</span>. On va supposer ici pour simplifier les calculs que <span class="math inline">\(A(z)\)</span> est une constante.</p>
+<p>Pour calculer <span class="math inline">\(\varepsilon_{xz}\)</span>, considerons</p>
+<p><span id="eq-6"><span class="math display">\[
+C_{1}(y,z) = Ay + C_{11}(z)
+C_{2}(x,z) = (16 - A)x + C_{22}(z)
+\tag{2}\]</span></span></p>
+<p>Donc, nous avons pour <span class="math inline">\(\varepsilon_{xz}\)</span>:</p>
+<p><span class="math display">\[\begin{align}
+\varepsilon_{xz} &amp;= \frac{1}{2} \left[ \frac{\partial u}{\partial z}  +  \frac{\partial w}{\partial x} \right] = 0 \\
+\varepsilon_{xz} &amp;= \frac{1}{2}
+   \left[
+   \left( \frac{\partial}{\partial z}(x^2 + x + C_{1}(y,z)) \right) + \left( \frac{\partial (\frac{z^2}{2} + C_{3}(x,y)) }{\partial z}  \right)
+   \right] = 0  \\
+c &amp; = d + e
+\end{align}\]</span></p>
 
 
 </section>
