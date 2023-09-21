@@ -85,7 +85,7 @@ website:
       contents:
         - TD.qmd      
         - TD/TD1.qmd
-#        - TD/TD2.qmd
+        - TD/TD2.qmd
     - title: "Travaux Pratiques"
       style: "floating"
       contents:

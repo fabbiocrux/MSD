@@ -1,11 +1,41 @@
 ---
-title: "TD 2: "
-subtitle: "Objectif: ..."
-format:
-  # pdf:
-  #   toc: true
-  #   number-sections: true
-  #   colorlinks: true
-  html:
-    number-sections: true
+title: "TD 2: Matrice de Déformations "
+subtitle: "Objectif: Calculer la matrice"
 ---
+
+# Exercice 3
+
+Soit le vecteur déplacement $\underline{U} = (u, v, w)^\intercal$ en tout point du solide de dimension caractéristique $L$, dans le repère cartésien:
+
+\begin{align}
+   \underline{U}(x,y,z) &= 
+      \begin{pmatrix}
+         \frac{x^{2}}{L} + 2y \\           
+         \frac{xy}{2L} \\           
+         -4z
+   \end{pmatrix}
+\end{align}
+
+
+1. Calculer la matrice de déformation $\underline{E}$ associé su vecteur de déformation.
+
+
+## Solution
+
+### Calculer la Matrice de Déformations
+
+La matrice est définie comme:
+
+
+$$
+\epsilon = \frac{1}{2}
+$$
+
+
+
+
+
+
+
+
+

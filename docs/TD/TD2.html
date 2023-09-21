@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MSD - TD 2:</title>
+<title>MSD - TD 2: Matrice de Déformations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../TD/TD1.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,10 +71,12 @@ window.MathJax = {
 };
 </script>    
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -102,7 +105,7 @@ window.MathJax = {
  <span class="menu-text">Cours Magistraux</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../TD.html" rel="" target="">
+    <a class="nav-link active" href="../TD.html" rel="" target="" aria-current="page">
  <span class="menu-text">Travaux Dirigés</span></a>
   </li>  
   <li class="nav-item">
@@ -127,21 +130,68 @@ window.MathJax = {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../TD/TD2.html">TD 2: Matrice de Déformations</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../TD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Travaux Dirigés</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../TD/TD1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TD 1: Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../TD/TD2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">TD 2: Matrice de Déformations</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#exercice-3" id="toc-exercice-3" class="nav-link active" data-scroll-target="#exercice-3"><span class="header-section-number">1</span> Exercice 3</a>
+  <ul class="collapse">
+  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution"><span class="header-section-number">1.1</span> Solution</a>
+  <ul class="collapse">
+  <li><a href="#calculer-la-matrice-de-déformations" id="toc-calculer-la-matrice-de-déformations" class="nav-link" data-scroll-target="#calculer-la-matrice-de-déformations"><span class="header-section-number">1.1.1</span> Calculer la Matrice de Déformations</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="TD2.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">TD 2:</h1>
-<p class="subtitle lead">Objectif: …</p>
+<h1 class="title">TD 2: Matrice de Déformations</h1>
+<p class="subtitle lead">Objectif: Calculer la matrice</p>
 </div>
 
 
@@ -156,8 +206,33 @@ window.MathJax = {
 
 </header>
 
+<section id="exercice-3" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Exercice 3</h1>
+<p>Soit le vecteur déplacement <span class="math inline">\(\underline{U} = (u, v, w)^\intercal\)</span> en tout point du solide de dimension caractéristique <span class="math inline">\(L\)</span>, dans le repère cartésien:</p>
+<p><span class="math display">\[\begin{align}
+   \underline{U}(x,y,z) &amp;=
+      \begin{pmatrix}
+         \frac{x^{2}}{L} + 2y \\           
+         \frac{xy}{2L} \\           
+         -4z
+   \end{pmatrix}
+\end{align}\]</span></p>
+<ol type="1">
+<li>Calculer la matrice de déformation <span class="math inline">\(\underline{E}\)</span> associé su vecteur de déformation.</li>
+</ol>
+<section id="solution" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="solution"><span class="header-section-number">1.1</span> Solution</h2>
+<section id="calculer-la-matrice-de-déformations" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="calculer-la-matrice-de-déformations"><span class="header-section-number">1.1.1</span> Calculer la Matrice de Déformations</h3>
+<p>La matrice est définie comme:</p>
+<p><span class="math display">\[
+\epsilon = \frac{1}{2}
+\]</span></p>
 
 
+</section>
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -393,6 +468,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../TD/TD1.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">TD 1: Introduction</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

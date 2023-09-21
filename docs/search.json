@@ -93,9 +93,9 @@
   {
     "objectID": "TD/TD2.html",
     "href": "TD/TD2.html",
-    "title": "TD 2:",
+    "title": "TD 2: Matrice de Déformations",
     "section": "",
-    "text": "Back to top"
+    "text": "Soit le vecteur déplacement \\(\\underline{U} = (u, v, w)^\\intercal\\) en tout point du solide de dimension caractéristique \\(L\\), dans le repère cartésien:\n\\[\\begin{align}\n   \\underline{U}(x,y,z) &=\n      \\begin{pmatrix}\n         \\frac{x^{2}}{L} + 2y \\\\           \n         \\frac{xy}{2L} \\\\           \n         -4z\n   \\end{pmatrix}\n\\end{align}\\]\n\nCalculer la matrice de déformation \\(\\underline{E}\\) associé su vecteur de déformation.\n\n\n\n\n\nLa matrice est définie comme:\n\\[\n\\epsilon = \\frac{1}{2}\n\\]"
   },
   {
     "objectID": "index.html",
@@ -173,5 +173,12 @@
     "title": "References",
     "section": "",
     "text": "References\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "TD/TD2.html#solution",
+    "href": "TD/TD2.html#solution",
+    "title": "TD 2: Matrice de Déformations",
+    "section": "",
+    "text": "La matrice est définie comme:\n\\[\n\\epsilon = \\frac{1}{2}\n\\]"
   }
 ]

@@ -145,7 +145,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={TD 1: Introduction},
+  pdftitle={TD 2: Matrice de Déformations},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -153,180 +153,53 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
-\title{TD 1: Introduction}
+\title{TD 2: Matrice de Déformations}
 \usepackage{etoolbox}
 \makeatletter
 \providecommand{\subtitle}[1]{% add subtitle to \maketitle
   \apptocmd{\@title}{\par {\large #1 \par}}{}{}
 }
 \makeatother
-\subtitle{Objectif: Application de la Loi de Hooke}
+\subtitle{Objectif: Calculer la matrice}
 \author{}
 \date{}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, sharp corners, interior hidden, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, sharp corners, interior hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, frame hidden, breakable]}{\end{tcolorbox}}\fi
 
-\thispagestyle{fancy}
+\hypertarget{exercice-4}{%
+\section{Exercice 4}\label{exercice-4}}
 
-\hypertarget{exercise-1-contrainte-en-traction}{%
-\section{Exercise 1: Contrainte en
-traction}\label{exercise-1-contrainte-en-traction}}
+Soit le vecteur déplacement \(\underline{U} = (u, v, w)^\intercal\) en
+tout point du solide de dimension caractéristique \(L\), dans le repère
+cartésien:
 
-Soit une force \(F\) de 1440 \(kN\) à une tige de longeur initiale de
-4\(m\). Cette tige a une section carré de \(20cm \times 20cm\) et
-s'allonge de \(2mm\). Le matériaux est à determiner.
-
-\begin{figure}
-
-\begin{minipage}[c]{0.35\linewidth}
-
-{\centering 
-
-\includegraphics[width=4.2cm,height=\textheight]{../assets/img/TD1/Ex1.png}
-
-}
-
-\end{minipage}%
-%
-\begin{minipage}[c]{0.65\linewidth}
-
-{\centering 
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Calculez la déformation normale \(\epsilon\), la contrainte en
-  traction \(\sigma\) et son module de Young d'elasticité \(E\).
-\item
-  A quel matériau pur ce module de Young peut-il correspondre ?
-\end{enumerate}
-
-}
-
-\end{minipage}%
-
-\end{figure}
-
-\hypertarget{exercise-2-contrainte-de-cisallement}{%
-\section{Exercise 2: Contrainte de
-Cisallement}\label{exercise-2-contrainte-de-cisallement}}
-
-\begin{figure}
-
-\begin{minipage}[c]{0.40\linewidth}
-
-{\centering 
-
-\includegraphics[width=5cm,height=\textheight]{../assets/img/TD1/Ex2.png}
-
-}
-
-\end{minipage}%
-%
-\begin{minipage}[c]{0.60\linewidth}
-
-{\centering 
-
-Calculez la déformation tangentielle (demi distorsion angulaire) d'une
-tige d'alluminium de \(3~m\) de long et de \(1~cm^{2}\) de section qui
-est soumise à un effort transversal de \(100~kN\)
-
-}
-
-\end{minipage}%
-
-\end{figure}
-
-\hypertarget{exercise-3-compression-poteau}{%
-\section{Exercise 3: Compression
-poteau}\label{exercise-3-compression-poteau}}
-
-Un poteau de chêne (module de Young \(E= 12~GPa\)) de \(3~m\) est
-utilisé pour supporter une charge compressive dans le sens des fibres.
-La section du poteau est carrée et vaut \(235~mm \times 235~mm\). Une
-masse de \(20~kg\) est appliquée sur la partie supérieure du poteau.
+\begin{align}
+   \underline{U}(x,y,z) &= 
+      \begin{pmatrix}
+         \frac{x^{2}}{L} + 2y \\           
+         \frac{xy}{2L} \\           
+         -4z
+   \end{pmatrix}
+\end{align}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Calculer la valeur de la \emph{contrainte normale} imposée par la
-  masse ?
-\item
-  En déduire la valeur de la \emph{déformation normale} ?
-\item
-  Quelle est la valeur de la longueur lorsque le poteau est déformé ?
+  Calculer la matrice de déformation \(\underline{E}\) associé su
+  vecteur de déformation.
 \end{enumerate}
 
-\hypertarget{exercise-4-analysuxe9-de-lessaie-de-traction}{%
-\section{Exercise 4: Analysé de l'essaie de
-traction}\label{exercise-4-analysuxe9-de-lessaie-de-traction}}
+\hypertarget{solution}{%
+\subsection{Solution}\label{solution}}
 
-Un test de traction est réalisé sur une éprouvette parallélépipède de
-longueur \(L_{0}= 10~cm\) et de section \(4~cm^{2}\).
+\hypertarget{calculer-la-matrice-de-duxe9formations}{%
+\subsubsection{Calculer la Matrice de
+Déformations}\label{calculer-la-matrice-de-duxe9formations}}
 
-\begin{figure}
-
-\begin{minipage}[c]{0.50\linewidth}
-
-{\centering 
-
-Le matériau considéré est \emph{fragile} et l'essai est effectué jusqu'à
-la rupture sur une éprouvette parallélépipédique. La courbe de l'essai
-de traction représenté par la force F en fonction de l'allongement
-\(\Delta L\) est présentée ci-dessous :
-
-}
-
-\end{minipage}%
-%
-\begin{minipage}[c]{0.50\linewidth}
-
-{\centering 
-
-\includegraphics[width=5cm,height=\textheight]{../assets/img/TD1/Ex4.png}
-
-}
-
-\end{minipage}%
-
-\end{figure}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Déterminer la \emph{rigidité} de la structure de l'éprouvette.
-\item
-  D'après la courbe \(F=f(\Delta L)\), déterminer la courbe de
-  contrainte \(\sigma\) en fonction de la déformation \(\epsilon\), puis
-  déterminer la valeur du module de Young ainsi que le matériau associé
-  ?
-\item
-  Soit une éprouvette composée du même matériau, de même longueur mais
-  de section deux fois supérieure.
-\end{enumerate}
-
-\begin{itemize}
-\tightlist
-\item
-  Tracer la contrainte en fonction de la déformation ainsi que la force
-  en fonction de l'allongement.
-\item
-  Tracer sur les mêmes graphiques avec cette fois-ci une éprouvette de
-  même section mais de longueur double \(L_{0}= 20~cm\).
-\end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Exprimer la relation reliant rigidité de la structure avec la section,
-  la longueur de l'éprouvette et le module de Young peut être déduite.
-\end{enumerate}
+La matrice est définie comme:
 
 
 
