@@ -1,0 +1,8 @@
+---
+title: "TD 3 & 4: Matrice de Déformations "
+subtitle: "Objectif: Calculer les contraintes"
+---
+
+\thispagestyle{fancy}
+
+# Exercice 1
