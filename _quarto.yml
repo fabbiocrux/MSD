@@ -89,11 +89,12 @@ website:
         - TD.qmd      
         - TD/TD1.qmd
         - TD/TD2.qmd
-    - title: "Travaux Pratiques"
-      style: "floating"
-      contents:
-        - TP.qmd      
-        - TP/TP1.qmd
+        - TD/TD3.qmd
+#    - title: "Travaux Pratiques"
+#      style: "floating"
+#      contents:
+#        - TP.qmd      
+#        - TP/TP1.qmd
 #        - TP/TP2.qmd        
 #        - TP/TP3.qmd
 #        - TP/TP4.qmd        
