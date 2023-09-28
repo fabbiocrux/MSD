@@ -100,28 +100,28 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "title": "\n             Mécanique du Solide Deformable\n         ",
     "section": "",
-    "text": "Conception et Innovation\n         \n         \n             “Think with your hands, build something or ty something, then talk about it, NOT the Reverse.” David Kelly, Founder IDEO & Standford Deisgn School\n         \n         \n         \n            Cours Magistraux            \n            Guide de Travaux Dirigés"
+    "text": "1 Année preparatoire –ENSGSI-\n         \n         \n             “Think with your hands, build something or ty something, then talk about it, NOT the Reverse.” David Kelly, Founder IDEO & Standford Deisgn School\n         \n         \n         \n            Cours Magistraux            \n            Guide de Travaux Dirigés"
   },
   {
     "objectID": "index.html#instructors",
     "href": "index.html#instructors",
-    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "title": "\n             Mécanique du Solide Deformable\n         ",
     "section": "1 Instructors",
     "text": "1 Instructors\n\n   MdC. Alaa Hassan\n   Dr. Fabio A Cruz\n   ENSGSI\n   Schedule an appointment"
   },
   {
     "objectID": "index.html#course-details",
     "href": "index.html#course-details",
-    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "title": "\n             Mécanique du Solide Deformable\n         ",
     "section": "2 Course details",
     "text": "2 Course details\n\n   Thursdays\n   January 9–May 2, 2023\n   7:15–9:45 PM\n   ENSGSI"
   },
   {
     "objectID": "index.html#contactez-nous",
     "href": "index.html#contactez-nous",
-    "title": "\n             Introduction à la conception de système mécatronique\n         ",
+    "title": "\n             Mécanique du Solide Deformable\n         ",
     "section": "3 Contactez nous",
     "text": "3 Contactez nous\nL’e-mail et Microsoft teams sont les meilleurs moyens de nous contacter. On essai de répondre à tous les courriels et messages liés au cours dans les XX heures (vraiment), mais rappelez-vous aussi que la vie peut être occupée et chaotique pour tout le monde (y compris nous !), alors si je ne réponds pas tout de suite, ne vous inquiétez pas !"
   },
@@ -306,5 +306,12 @@
     "title": "TD 3 & 4: Les contraintes",
     "section": "2.2 2. Déterminer le vecteur contrainte d’un point \\(M\\) situé sur la face \\(x=2L\\).",
     "text": "2.2 2. Déterminer le vecteur contrainte d’un point \\(M\\) situé sur la face \\(x=2L\\).\nD’après le cours, le vecteur contrainte associé, noté \\(\\underline{C}(M,n)\\) est:\n\\[\n\\underline{C}(M, \\underline{n}) = \\underline{\\underline\\sum}(M)\\cdot \\underline{n}\n\\]\nLe point \\(M\\) est : \\((2L, y, z)\\). Donc, notre cas, \\(\\underline{C}(2L, y, Z)\\) dans la direction \\(i = (1,0,0)\\) car c’est le vecteur que represente la face à \\(x=2L\\):\n\\[\n\\underline{C}(M, \\underline{n}) =\n\\begin{pmatrix}\n\\sigma_{xx} & \\sigma_{xy} & \\sigma_{xz}\\\\\n\\sigma_{yx} & \\sigma_{yy} & \\sigma_{yz}\\\\\n\\sigma_{zx} & \\sigma_{zy} & \\sigma_{zz}\\\\\n\\end{pmatrix}  \\cdot\n\\begin{pmatrix}\nx \\\\\ny \\\\\nz\n\\end{pmatrix}\n\\]\n\\[\n\\underline{C}(M, \\underline{n}) =\n\\begin{pmatrix}\n\\sigma_{xx} & \\sigma_{xy} & \\sigma_{xz}\\\\\n\\sigma_{yx} & \\sigma_{yy} & \\sigma_{yz}\\\\\n\\sigma_{zx} & \\sigma_{zy} & \\sigma_{zz}\\\\\n\\end{pmatrix}  \\cdot\n\\begin{pmatrix}\n1 \\\\\n0 \\\\\n0\n\\end{pmatrix} =\n\\begin{pmatrix}\n\\sigma_{xx} \\\\\n\\sigma_{yx} \\\\\n\\sigma_{zx}\n\\end{pmatrix}\n\\]\nEn remplaçant les valeurs: \\[\n\\underline{\\underline{C}}(M, i) =\n\\begin{pmatrix}\n\\frac{2 \\sigma_{0}x}{L} - 2\\sigma_{0} &\n    \\frac{ - 2 \\sigma_{0}y}{L} &\n        0 \\\\\n\\frac{ - 2 \\sigma_{0}y}{L} &\n    0 &\n        0\\\\\n0   &\n    0 &\n    \\sigma_{1}\\\\\n\\end{pmatrix}  \\cdot\n\\begin{pmatrix}\n1 \\\\\n0 \\\\\n0\n\\end{pmatrix} =\n\\xRightarrow{\\qquad }\n\\begin{pmatrix}\n\\frac{2 \\sigma_{0}(2L)}{L} - 2\\sigma_{0} \\\\\n\\frac{ - 2 \\sigma_{0}y}{L} \\\\\n0   \\\\\n\\end{pmatrix}\n\\xRightarrow{\\qquad }\n\\begin{pmatrix}\n2\\sigma_{0} \\\\\n\\frac{ - 2 \\sigma_{0}y}{L} \\\\\n0   \\\\\n\\end{pmatrix}\n\\]\nDonc, la face du solide \\(x=2L\\) de normale \\(i\\) est soumise à une contrainte normalz \\(2\\sigma_{0}\\) (selon \\(\\underline{i}\\)) et une contrainte tangentielle \\(\\frac{ - 2 \\sigma_{0}y}{L}\\) selon \\(\\underline{j}\\)."
+  },
+  {
+    "objectID": "TD/TD3.html#calculer-en-g-centre-de-section-le-torseur-global-équivalent-associé-à-ces-densités-surfaciques-defforts-sur-cette-même-face.",
+    "href": "TD/TD3.html#calculer-en-g-centre-de-section-le-torseur-global-équivalent-associé-à-ces-densités-surfaciques-defforts-sur-cette-même-face.",
+    "title": "TD 3 & 4: Les contraintes",
+    "section": "2.3 3. Calculer en \\(G\\) (centre de section) le torseur global équivalent associé à ces densités surfaciques d’efforts sur cette même face.",
+    "text": "2.3 3. Calculer en \\(G\\) (centre de section) le torseur global équivalent associé à ces densités surfaciques d’efforts sur cette même face.\nLe torseur global associé à la contrainte déterminée précédemment au point \\(G\\) s’ecrit:\n\\[\n\\underline{\\tau} =\n\\begin{cases}\n    \\underline{R}(\\tau_{M}) \\\\\n    \\underline{M}(\\tau_{M}, G)  \n\\end{cases}\n\\]"
   }
 ]

@@ -1,6 +1,6 @@
 ---
-title: "Introduction à la conception de système mécatronique"
-subtitle: "Conception et Innovation"
+title: "Mécanique du Solide Deformable"
+subtitle: "1 Année preparatoire --ENSGSI-"
 details: |
   "Think with your hands, build something or ty something, then talk about it, NOT the Reverse." *David Kelly, Founder IDEO & Standford Deisgn School* 
 sidebar: false

@@ -247,8 +247,23 @@ $$
 \end{pmatrix}
 $$
 
-
 Donc, la face du solide $x=2L$ de normale $i$ est soumise à une contrainte normalz $2\sigma_{0}$ (selon $\underline{i}$) et une contrainte tangentielle $\frac{ - 2 \sigma_{0}y}{L}$ selon $\underline{j}$.
+
+
+## 3. Calculer en $G$ (centre de section) le torseur global équivalent associé à ces densités surfaciques d'efforts sur cette même face.
+
+
+Le torseur global associé à la contrainte déterminée précédemment au point $G$ s'ecrit: 
+
+
+$$
+\underline{\tau} = 
+\begin{cases} 
+    \underline{R}(\tau_{M}) \\
+    \underline{M}(\tau_{M}, G)  
+\end{cases}
+$$
+
 
 
 # Exercice 3 
