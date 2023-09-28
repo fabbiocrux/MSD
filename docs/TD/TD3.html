@@ -139,8 +139,22 @@ window.MathJax = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exercice-1-determination-du-cisaillement-maximal-par-cercle-de-mohr" id="toc-exercice-1-determination-du-cisaillement-maximal-par-cercle-de-mohr" class="nav-link active" data-scroll-target="#exercice-1-determination-du-cisaillement-maximal-par-cercle-de-mohr"><span class="header-section-number">1</span> Exercice 1: Determination du cisaillement maximal par cercle de Mohr</a></li>
-  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2"><span class="header-section-number">2</span> Exercise 2:</a></li>
+  <li><a href="#exercice-1-determination-du-cisaillement-maximal-par-cercle-de-mohr" id="toc-exercice-1-determination-du-cisaillement-maximal-par-cercle-de-mohr" class="nav-link active" data-scroll-target="#exercice-1-determination-du-cisaillement-maximal-par-cercle-de-mohr"><span class="header-section-number">1</span> Exercice 1: Determination du cisaillement maximal par cercle de Mohr</a>
+  <ul class="collapse">
+  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution"><span class="header-section-number">1.1</span> Solution</a>
+  <ul class="collapse">
+  <li><a href="#determiner-les-contraintes-sigma_xx-et-sigma_yy" id="toc-determiner-les-contraintes-sigma_xx-et-sigma_yy" class="nav-link" data-scroll-target="#determiner-les-contraintes-sigma_xx-et-sigma_yy"><span class="header-section-number">1.1.1</span> Determiner les contraintes <span class="math inline">\(\sigma_{xx}\)</span> et <span class="math inline">\(\sigma_{yy}\)</span></a></li>
+  </ul></li>
+  <li><a href="#déduire-langle-de-cisaillement-maximale-du-matériau" id="toc-déduire-langle-de-cisaillement-maximale-du-matériau" class="nav-link" data-scroll-target="#déduire-langle-de-cisaillement-maximale-du-matériau"><span class="header-section-number">1.2</span> Déduire l’angle de cisaillement maximale du matériau</a></li>
+  </ul></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2"><span class="header-section-number">2</span> Exercise 2:</a>
+  <ul class="collapse">
+  <li><a href="#solution-1" id="toc-solution-1" class="nav-link" data-scroll-target="#solution-1"><span class="header-section-number">2.1</span> Solution</a>
+  <ul class="collapse">
+  <li><a href="#statuer-des-équations-déquilibre-local" id="toc-statuer-des-équations-déquilibre-local" class="nav-link" data-scroll-target="#statuer-des-équations-déquilibre-local"><span class="header-section-number">2.1.1</span> Statuer des équations d’équilibre local</a></li>
+  </ul></li>
+  <li><a href="#déterminer-le-vecteur-contrainte-dun-point-m-situé-sur-la-face-x2l." id="toc-déterminer-le-vecteur-contrainte-dun-point-m-situé-sur-la-face-x2l." class="nav-link" data-scroll-target="#déterminer-le-vecteur-contrainte-dun-point-m-situé-sur-la-face-x2l."><span class="header-section-number">2.2</span> 2. Déterminer le vecteur contrainte d’un point <span class="math inline">\(M\)</span> situé sur la face <span class="math inline">\(x=2L\)</span>.</a></li>
+  </ul></li>
   <li><a href="#exercice-3" id="toc-exercice-3" class="nav-link" data-scroll-target="#exercice-3"><span class="header-section-number">3</span> Exercice 3</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="TD3.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -173,15 +187,202 @@ window.MathJax = {
 <li>Determiner les contraintes <span class="math inline">\(\sigma_{xx}\)</span> et <span class="math inline">\(\sigma_{yy}\)</span> associées.</li>
 <li>A partir du cercle de Mohr, déduire l’angle de cisaillemen maximale du matériau.</li>
 </ol>
+<section id="solution" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="solution"><span class="header-section-number">1.1</span> Solution</h2>
+<section id="determiner-les-contraintes-sigma_xx-et-sigma_yy" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="determiner-les-contraintes-sigma_xx-et-sigma_yy"><span class="header-section-number">1.1.1</span> Determiner les contraintes <span class="math inline">\(\sigma_{xx}\)</span> et <span class="math inline">\(\sigma_{yy}\)</span></h3>
+<p>L’equilibre statique permet de considérer un colume élémentaire dans le solide.</p>
+<p>Pour <span class="math inline">\(\sigma_{xx}\)</span>:</p>
+<p><span class="math display">\[\begin{align}
+\sigma_{xx} &amp;=
+  \frac{F_{xx}}{A_{xx}} \cdot \left[ \frac{N}{m^2} \right]  \\[5pt]
+\sigma_{xx} &amp;=  \frac{1000}{50 \times 10} \times \frac{(1000~mm)^2}{1~m^2} = 4~MPa
+\end{align}\]</span></p>
+<p>Pour <span class="math inline">\(\sigma_{yy}\)</span>:</p>
+<p><span class="math display">\[\begin{align}
+\sigma_{yy} &amp;=
+  \frac{F_{yy}}{A_{yy}} \cdot \left[ \frac{N}{m^2} \right]  \\[5pt]
+\sigma_{xx} &amp;=  \frac{1000}{10 \times 10} \times \frac{(1000~mm)^2}{1~m^2} = 10~MPa
+\end{align}\]</span></p>
+</section>
+</section>
+<section id="déduire-langle-de-cisaillement-maximale-du-matériau" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="déduire-langle-de-cisaillement-maximale-du-matériau"><span class="header-section-number">1.2</span> Déduire l’angle de cisaillement maximale du matériau</h2>
+<p><span class="math inline">\(\sigma_{xx}\)</span> et <span class="math inline">\(\sigma_{yy}\)</span> sont de contraintes normales et contraintes principales. Donc les points restent sur l’axe des <span class="math inline">\(\sigma\)</span>.</p>
+<p>Le centre est égal à la demi-distance séparant <span class="math inline">\(\sigma_{xx}\)</span> et <span class="math inline">\(\sigma_{yy}\)</span>.</p>
+<p><span class="math display">\[
+c= \frac{\sigma_{xx} + \sigma_{yy}}{2}
+\]</span></p>
+<p><span class="math display">\[
+C = 7~MPa
+\]</span></p>
+<p>Donc, les contraintes de cisaillement max sont</p>
+<p><span class="math display">\[
+\tau = \frac{\sigma_{xx} - \sigma_{yy}}{2}
+\]</span></p>
+<p><span class="math display">\[
+\mathbf{C = 3~MPa}
+\]</span></p>
+</section>
 </section>
 <section id="exercise-2" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Exercise 2:</h1>
 <p>Soit la matrice des contraintes <span class="math inline">\(\underline{\underline{\sum}}\)</span> exprimée ci-dessous:</p>
+<p><span class="math display">\[
+\underline{\underline{\sigma}}(M) =
+\begin{pmatrix}
+\frac{2 \sigma_{0}x}{L} - 2\sigma_{0} &amp;
+    \frac{ - 2 \sigma_{0}y}{L} &amp;
+        0 \\
+\frac{ - 2 \sigma_{0}y}{L} &amp;
+    0 &amp;
+        0\\
+0   &amp;
+    0 &amp;
+    \sigma_{1}\\
+\end{pmatrix}  
+\]</span></p>
 <ol type="1">
 <li>Statuer des équations d’équilibre local.</li>
 <li>Déterminer le vecteur contrainte d’un point <span class="math inline">\(M\)</span> situé sur la face <span class="math inline">\(x=2L\)</span>.</li>
 <li>Calculer en <span class="math inline">\(G\)</span> (centre de section) le torseur global équivalent associé à ces densités surfaciques d’efforts sur cette même face.</li>
 </ol>
+<section id="solution-1" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="solution-1"><span class="header-section-number">2.1</span> Solution</h2>
+<section id="statuer-des-équations-déquilibre-local" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="statuer-des-équations-déquilibre-local"><span class="header-section-number">2.1.1</span> Statuer des équations d’équilibre local</h3>
+<p>D’après le cours, les équations d’équilibre local s’ecrivent :</p>
+<p><span class="math display">\[
+\nabla \cdot \mathbf{F} =
+\frac{\partial F_{x}}{\partial x} + \frac{\partial F_{y}}{\partial y} + \frac{\partial F_{z}}{\partial z} - \underline{f_{v}}
+\]</span></p>
+<p><span class="math display">\[
+\text{En Cordonées Cartésiennes} =
+\begin{cases}
+    \frac{\partial \sigma_{xx}}{\partial x} +
+    \frac{\partial \sigma_{xy}}{\partial y} +
+    \frac{\partial \sigma_{xz}}{\partial z} + f_{x} =0 \\    
+    \frac{\partial \sigma_{yx}}{\partial x} +
+    \frac{\partial \sigma_{yy}}{\partial y} +
+    \frac{\partial \sigma_{yz}}{\partial z} + f_{y} =0\\        
+    \frac{\partial \sigma_{zx}}{\partial x} +
+    \frac{\partial \sigma_{zy}}{\partial y} +
+    \frac{\partial \sigma_{zz}}{\partial z} + f_{z} =0\\            
+\end{cases}  
+\]</span></p>
+<p>pour la direction <span class="math inline">\(i\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial \sigma_{xx}}{\partial x} +
+  \frac{\partial \sigma_{xy}}{\partial y} +
+    \frac{\partial \sigma_{xz}}{\partial z} + f_{x} =0 \\    
+\]</span></p>
+<p><span class="math display">\[
+\frac{\partial }{\partial x} (\frac{2 \sigma_{0}x}{L} - \cancel{2 \sigma_{0}}) +
+  \frac{\partial }{\partial y} (- \frac{2 \sigma_{0}y}{L} )  +
+    \frac{\partial }{\partial z} \cancel{0} + f_{x} = 0 \\    
+\]</span></p>
+<p><span class="math display">\[
+\cancel{\frac{2 \sigma_{0}}{L} }
+\cancel{  - \frac{2 \sigma_{0}}{L}} +
+  \mathbf{f_{x} = 0} \\    
+\]</span></p>
+<p>pour la direction <span class="math inline">\(j\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial \sigma_{yx}}{\partial x} +
+    \frac{\partial \sigma_{yy}}{\partial y} +
+    \frac{\partial \sigma_{yz}}{\partial z} + f_{y} =0\\        
+\]</span></p>
+<p><span class="math display">\[
+\frac{\partial }{\partial x} (\cancel{ -\frac{2 \sigma_{0}y}{L}}) +
+  \frac{\partial }{\partial y} (\cancel{0})  +
+    \frac{\partial }{\partial z} \cancel{0} +
+    \mathbf{f_{y} = 0} \\    
+\]</span></p>
+<p>Pour la direction <span class="math inline">\(k\)</span>:</p>
+<p><span class="math display">\[
+    \frac{\partial \sigma_{zx}}{\partial x} +
+    \frac{\partial \sigma_{zy}}{\partial y} +
+    \frac{\partial \sigma_{zz}}{\partial z} + f_{z} =0\\    
+\]</span></p>
+<p><span class="math display">\[
+\frac{\partial }{\partial x} (\cancel{ 0 }) +
+  \frac{\partial }{\partial y} (\cancel{0})  +
+    \frac{\partial }{\partial z} \cancel{\sigma_{1}} +
+    \mathbf{f_{z} = 0} \\    
+\]</span></p>
+</section>
+</section>
+<section id="déterminer-le-vecteur-contrainte-dun-point-m-situé-sur-la-face-x2l." class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="déterminer-le-vecteur-contrainte-dun-point-m-situé-sur-la-face-x2l."><span class="header-section-number">2.2</span> 2. Déterminer le vecteur contrainte d’un point <span class="math inline">\(M\)</span> situé sur la face <span class="math inline">\(x=2L\)</span>.</h2>
+<p>D’après le cours, le vecteur contrainte associé, noté <span class="math inline">\(\underline{C}(M,n)\)</span> est:</p>
+<p><span class="math display">\[
+\underline{C}(M, \underline{n}) = \underline{\underline\sum}(M)\cdot \underline{n}
+\]</span></p>
+<p>Le point <span class="math inline">\(M\)</span> est : <span class="math inline">\((2L, y, z)\)</span>. Donc, notre cas, <span class="math inline">\(\underline{C}(2L, y, Z)\)</span> dans la direction <span class="math inline">\(i = (1,0,0)\)</span> car c’est le vecteur que represente la face à <span class="math inline">\(x=2L\)</span>:</p>
+<p><span class="math display">\[
+\underline{C}(M, \underline{n}) =
+\begin{pmatrix}
+\sigma_{xx} &amp; \sigma_{xy} &amp; \sigma_{xz}\\
+\sigma_{yx} &amp; \sigma_{yy} &amp; \sigma_{yz}\\
+\sigma_{zx} &amp; \sigma_{zy} &amp; \sigma_{zz}\\
+\end{pmatrix}  \cdot
+\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\underline{C}(M, \underline{n}) =
+\begin{pmatrix}
+\sigma_{xx} &amp; \sigma_{xy} &amp; \sigma_{xz}\\
+\sigma_{yx} &amp; \sigma_{yy} &amp; \sigma_{yz}\\
+\sigma_{zx} &amp; \sigma_{zy} &amp; \sigma_{zz}\\
+\end{pmatrix}  \cdot
+\begin{pmatrix}
+1 \\
+0 \\
+0
+\end{pmatrix} =
+\begin{pmatrix}
+\sigma_{xx} \\
+\sigma_{yx} \\
+\sigma_{zx}
+\end{pmatrix}
+\]</span></p>
+<p>En remplaçant les valeurs: <span class="math display">\[
+\underline{\underline{C}}(M, i) =
+\begin{pmatrix}
+\frac{2 \sigma_{0}x}{L} - 2\sigma_{0} &amp;
+    \frac{ - 2 \sigma_{0}y}{L} &amp;
+        0 \\
+\frac{ - 2 \sigma_{0}y}{L} &amp;
+    0 &amp;
+        0\\
+0   &amp;
+    0 &amp;
+    \sigma_{1}\\
+\end{pmatrix}  \cdot
+\begin{pmatrix}
+1 \\
+0 \\
+0
+\end{pmatrix} =
+\xRightarrow{\qquad }
+\begin{pmatrix}
+\frac{2 \sigma_{0}(2L)}{L} - 2\sigma_{0} \\
+\frac{ - 2 \sigma_{0}y}{L} \\
+0   \\
+\end{pmatrix}
+\xRightarrow{\qquad }
+\begin{pmatrix}
+2\sigma_{0} \\
+\frac{ - 2 \sigma_{0}y}{L} \\
+0   \\
+\end{pmatrix}
+\]</span></p>
+<p>Donc, la face du solide <span class="math inline">\(x=2L\)</span> de normale <span class="math inline">\(i\)</span> est soumise à une contrainte normalz <span class="math inline">\(2\sigma_{0}\)</span> (selon <span class="math inline">\(\underline{i}\)</span>) et une contrainte tangentielle <span class="math inline">\(\frac{ - 2 \sigma_{0}y}{L}\)</span> selon <span class="math inline">\(\underline{j}\)</span>.</p>
+</section>
 </section>
 <section id="exercice-3" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Exercice 3</h1>
@@ -211,6 +412,15 @@ window.MathJax = {
 I_{z} = \frac{bh^{3}}{12}
 \]</span></p>
 <p>Le lien entre <span class="math inline">\(\varepsilon_{xx}, \varepsilon_{yy} \varepsilon_{zz}\)</span> est : <span class="math inline">\(- \nu\varepsilon_{xx} = \varepsilon_{yy} \varepsilon_{zz}\)</span></p>
+<ol type="1">
+<li>Rappeler l’unité de <span class="math inline">\(M_{0}\)</span>?</li>
+<li>Quel montage expérimental permettrait par le bias de deux uniques forces d’obtenir le couple <span class="math inline">\(\tau_{M}\)</span> sur la surface <span class="math inline">\(x=L\)</span>?</li>
+<li>Determiner l’expression du torseur global équivalent au point <span class="math inline">\(O\)</span>.</li>
+<li>Statuer des équations de compatibilité.</li>
+<li>Déterminer alors l’expression de vecteur déplacement.</li>
+<li>Déterminer complètement ce déplacement sachant qu’un déplacement nul et une rotation nulle sont imposés au point <span class="math inline">\(O\)</span>.</li>
+<li>Représenter l’allure de la fibre moyenne déformée.</li>
+</ol>
 
 
 </section>

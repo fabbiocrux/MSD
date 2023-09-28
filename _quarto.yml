@@ -125,8 +125,8 @@ format:
           </script>    
 #      css: assets/styles.css  
   pdf:
-    documentclass: extarticle
-    fontsize: 14pt
+    documentclass: article
+    fontsize: 12pt
     number-sections: true
     keep-tex: false
     colorlinks: true

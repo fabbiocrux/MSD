@@ -1,6 +1,8 @@
 ---
 title: "TD 3 & 4: Les contraintes"
 subtitle: "Objectif: Calculer les contraintes"
+params:
+  solution: "yes"
 ---
 
 \thispagestyle{fancy}
@@ -15,12 +17,238 @@ Le matériau est en équilibre statique et la xontrqinte est considérée comm �
 
 
 
+## Solution
+### Determiner les contraintes $\sigma_{xx}$ et $\sigma_{yy}$
+
+L'equilibre statique permet de considérer un colume élémentaire dans le solide.
+
+Pour $\sigma_{xx}$:
+
+\begin{align}
+\sigma_{xx} &= 
+  \frac{F_{xx}}{A_{xx}} \cdot \left[ \frac{N}{m^2} \right]  \\[5pt]
+ \sigma_{xx} &=  \frac{1000}{50 \times 10} \times \frac{(1000~mm)^2}{1~m^2} = 4~MPa 
+\end{align}
+
+
+Pour $\sigma_{yy}$:
+
+\begin{align}
+\sigma_{yy} &= 
+  \frac{F_{yy}}{A_{yy}} \cdot \left[ \frac{N}{m^2} \right]  \\[5pt]
+ \sigma_{xx} &=  \frac{1000}{10 \times 10} \times \frac{(1000~mm)^2}{1~m^2} = 10~MPa 
+\end{align}
+
+
+## Déduire l'angle de cisaillement maximale du matériau
+
+$\sigma_{xx}$ et $\sigma_{yy}$ sont de contraintes normales et contraintes principales.
+Donc les points restent sur l'axe des $\sigma$. 
+
+Le centre est égal à la demi-distance séparant $\sigma_{xx}$ et $\sigma_{yy}$. 
+
+$$
+c= \frac{\sigma_{xx} + \sigma_{yy}}{2}
+$$
+
+$$
+C = 7~MPa
+$$
+
+Donc, les contraintes de cisaillement max sont
+
+$$
+\tau = \frac{\sigma_{xx} - \sigma_{yy}}{2}
+$$
+
+$$
+\mathbf{C = 3~MPa}
+$$
+
+
 # Exercise 2: 
 Soit la matrice des contraintes $\underline{\underline{\sum}}$ exprimée ci-dessous:
+
+
+$$
+\underline{\underline{\sigma}}(M) = 
+\begin{pmatrix}
+\frac{2 \sigma_{0}x}{L} - 2\sigma_{0} &
+    \frac{ - 2 \sigma_{0}y}{L} & 
+        0 \\
+\frac{ - 2 \sigma_{0}y}{L} & 
+    0 & 
+        0\\
+0   &
+    0 & 
+    \sigma_{1}\\
+\end{pmatrix}  
+$$
+
 
 1. Statuer des équations d'équilibre local.
 2. Déterminer le vecteur contrainte d'un point $M$ situé sur la face $x=2L$.
 3. Calculer en $G$ (centre de section) le torseur global équivalent associé à ces densités surfaciques d'efforts sur cette même face.
+
+
+
+## Solution
+### Statuer des équations d'équilibre local
+
+D'après le cours, les équations d'équilibre local s'ecrivent :
+
+$$
+\nabla \cdot \mathbf{F} = 
+\frac{\partial F_{x}}{\partial x} + \frac{\partial F_{y}}{\partial y} + \frac{\partial F_{z}}{\partial z} - \underline{f_{v}}
+$$
+
+$$
+ \text{En Cordonées Cartésiennes} =
+\begin{cases}
+    \frac{\partial \sigma_{xx}}{\partial x} + 
+    \frac{\partial \sigma_{xy}}{\partial y} + 
+    \frac{\partial \sigma_{xz}}{\partial z} + f_{x} =0 \\    
+    \frac{\partial \sigma_{yx}}{\partial x} + 
+    \frac{\partial \sigma_{yy}}{\partial y} + 
+    \frac{\partial \sigma_{yz}}{\partial z} + f_{y} =0\\        
+    \frac{\partial \sigma_{zx}}{\partial x} + 
+    \frac{\partial \sigma_{zy}}{\partial y} + 
+    \frac{\partial \sigma_{zz}}{\partial z} + f_{z} =0\\            
+ \end{cases}  
+$$
+
+pour la direction $i$:
+
+$$
+\frac{\partial \sigma_{xx}}{\partial x} + 
+  \frac{\partial \sigma_{xy}}{\partial y} + 
+    \frac{\partial \sigma_{xz}}{\partial z} + f_{x} =0 \\    
+$$
+
+$$
+\frac{\partial }{\partial x} (\frac{2 \sigma_{0}x}{L} - \cancel{2 \sigma_{0}}) + 
+  \frac{\partial }{\partial y} (- \frac{2 \sigma_{0}y}{L} )  + 
+    \frac{\partial }{\partial z} \cancel{0} + f_{x} = 0 \\    
+$$
+
+$$
+\cancel{\frac{2 \sigma_{0}}{L} } 
+\cancel{  - \frac{2 \sigma_{0}}{L}} + 
+  \mathbf{f_{x} = 0} \\    
+$$
+
+pour la direction $j$:
+
+$$
+\frac{\partial \sigma_{yx}}{\partial x} + 
+    \frac{\partial \sigma_{yy}}{\partial y} + 
+    \frac{\partial \sigma_{yz}}{\partial z} + f_{y} =0\\        
+$$
+
+
+$$
+\frac{\partial }{\partial x} (\cancel{ -\frac{2 \sigma_{0}y}{L}}) + 
+  \frac{\partial }{\partial y} (\cancel{0})  + 
+    \frac{\partial }{\partial z} \cancel{0} + 
+    \mathbf{f_{y} = 0} \\    
+$$
+
+Pour la direction $k$:
+
+
+$$
+    \frac{\partial \sigma_{zx}}{\partial x} + 
+    \frac{\partial \sigma_{zy}}{\partial y} + 
+    \frac{\partial \sigma_{zz}}{\partial z} + f_{z} =0\\    
+$$
+
+
+$$
+\frac{\partial }{\partial x} (\cancel{ 0 }) + 
+  \frac{\partial }{\partial y} (\cancel{0})  + 
+    \frac{\partial }{\partial z} \cancel{\sigma_{1}} + 
+    \mathbf{f_{z} = 0} \\    
+$$
+
+
+## 2. Déterminer le vecteur contrainte d'un point $M$ situé sur la face $x=2L$.
+
+D'après le cours, le vecteur contrainte associé, noté $\underline{C}(M,n)$ est:
+
+$$
+\underline{C}(M, \underline{n}) = \underline{\underline\sum}(M)\cdot \underline{n}
+$$
+
+Le point $M$ est : $(2L, y, z)$. Donc, notre cas, $\underline{C}(2L, y, Z)$ dans la direction $i = (1,0,0)$  car c'est le vecteur que represente la face à $x=2L$:
+
+$$
+\underline{C}(M, \underline{n}) = 
+\begin{pmatrix}
+\sigma_{xx} & \sigma_{xy} & \sigma_{xz}\\
+\sigma_{yx} & \sigma_{yy} & \sigma_{yz}\\
+\sigma_{zx} & \sigma_{zy} & \sigma_{zz}\\
+\end{pmatrix}  \cdot
+\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix} 
+$$
+
+$$
+\underline{C}(M, \underline{n}) = 
+\begin{pmatrix}
+\sigma_{xx} & \sigma_{xy} & \sigma_{xz}\\
+\sigma_{yx} & \sigma_{yy} & \sigma_{yz}\\
+\sigma_{zx} & \sigma_{zy} & \sigma_{zz}\\
+\end{pmatrix}  \cdot
+\begin{pmatrix}
+1 \\
+0 \\
+0
+\end{pmatrix} =
+\begin{pmatrix}
+\sigma_{xx} \\
+\sigma_{yx} \\
+\sigma_{zx}
+\end{pmatrix}
+$$
+
+En remplaçant les valeurs:
+$$
+\underline{\underline{C}}(M, i) = 
+\begin{pmatrix}
+\frac{2 \sigma_{0}x}{L} - 2\sigma_{0} &
+    \frac{ - 2 \sigma_{0}y}{L} & 
+        0 \\
+\frac{ - 2 \sigma_{0}y}{L} & 
+    0 & 
+        0\\
+0   &
+    0 & 
+    \sigma_{1}\\
+\end{pmatrix}  \cdot
+\begin{pmatrix}
+1 \\
+0 \\
+0
+\end{pmatrix} =
+\xRightarrow{\qquad }
+\begin{pmatrix}
+\frac{2 \sigma_{0}(2L)}{L} - 2\sigma_{0} \\
+\frac{ - 2 \sigma_{0}y}{L} \\
+0   \\
+\end{pmatrix}
+\xRightarrow{\qquad }
+\begin{pmatrix}
+2\sigma_{0} \\
+\frac{ - 2 \sigma_{0}y}{L} \\
+0   \\
+\end{pmatrix}
+$$
+
+
+Donc, la face du solide $x=2L$ de normale $i$ est soumise à une contrainte normalz $2\sigma_{0}$ (selon $\underline{i}$) et une contrainte tangentielle $\frac{ - 2 \sigma_{0}y}{L}$ selon $\underline{j}$.
 
 
 # Exercice 3 
@@ -68,3 +296,18 @@ I_{z} = \frac{bh^{3}}{12}
 $$
 
 Le lien entre $\varepsilon_{xx}, \varepsilon_{yy} \varepsilon_{zz}$ est : $- \nu\varepsilon_{xx} = \varepsilon_{yy} \varepsilon_{zz}$
+
+
+1. Rappeler l'unité de $M_{0}$?
+2. Quel montage expérimental permettrait par le bias de deux uniques forces d'obtenir le couple $\tau_{M}$ sur la surface $x=L$?
+3. Determiner l'expression du torseur global équivalent au point $O$.
+4. Statuer des équations de compatibilité.
+5. Déterminer alors l'expression de vecteur déplacement.
+6. Déterminer complètement ce déplacement sachant qu'un déplacement nul et une rotation nulle sont imposés au point $O$.
+7. Représenter l'allure de la fibre moyenne déformée.
+
+
+
+
+
+
