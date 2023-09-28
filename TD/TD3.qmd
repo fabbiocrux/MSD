@@ -1,8 +1,70 @@
 ---
-title: "TD 3 & 4: Matrice de Déformations "
+title: "TD 3 & 4: Les contraintes"
 subtitle: "Objectif: Calculer les contraintes"
 ---
 
 \thispagestyle{fancy}
 
-# Exercice 1
+# Exercice 1: Determination du cisaillement maximal par cercle de Mohr
+
+Soit un solide de section $10\times10 ~ cm^{2}$ et de hauteru de $50~mm$ soumis à un essai de traction. 
+Le matériau est en équilibre statique et la xontrqinte est considérée comm étant bi-axiale.
+
+1. Determiner les contraintes $\sigma_{xx}$ et $\sigma_{yy}$ associées.
+2. A partir du cercle de Mohr, déduire l'angle de cisaillemen maximale du matériau.
+
+
+
+# Exercise 2: 
+Soit la matrice des contraintes $\underline{\underline{\sum}}$ exprimée ci-dessous:
+
+1. Statuer des équations d'équilibre local.
+2. Déterminer le vecteur contrainte d'un point $M$ situé sur la face $x=2L$.
+3. Calculer en $G$ (centre de section) le torseur global équivalent associé à ces densités surfaciques d'efforts sur cette même face.
+
+
+# Exercice 3 
+
+Soit une poutre parallélépipède rectangle de longeur $L$, de largeur $l$ et d'épaisseur $e$ comme illustré ci-dessous.
+Elle est soumise à une flexion pure. 
+
+L'objectif de cette exercice est de déterminer le chap de déplacement en tout point. 
+La face en $x=0$ est encstrée, le point de coordonnées $(0,0,0)$ est fixe, le point du plain $(i,j)$ restent dans ce plain et les points situées en $x=0$ resten dans le plain $(j,k)$ après deformation.
+
+A l'opposée de l'encastrement, un couple est imposé sur la face $x=L$ avec au point $M$ le torseur global équivalent $\tau_{M}$ s'écrivant:
+
+
+
+
+$$
+\tau_{M} = 
+\begin{cases} 
+    \underline{R}(\tau_{M}) = 0 \\
+    \underline{M}(\tau_{M}, M) = M_{0}\underline{k} \\
+\end{cases}
+$$
+
+
+La sollicitation sur la poutre engendre en tout point du solide des déformations notées dans la materice de déformation $\underline{\underline{E}}$
+
+$$
+\underline{\underline{E}} = 
+\begin{pmatrix}
+\varepsilon_{xx} & 0 & 0 \\
+\varepsilon_{yx} & 0 & 0\\
+\varepsilon_{zx} & 0 & 0\\
+\end{pmatrix}  
+$$
+
+
+La déformation  $\varepsilon_{xx}$ est de la forme $\varepsilon_{xx} = - \frac{y \cdot M_{0}}{E \cdot I_{z}}$.
+
+Cette dernière  dépend du coefficient de Poisson $(\nu)$, du module de Young $E$, du moment $M_{0}$ et du moment quadratique $I_{z}$ par rapport à $\underline{k}$ de la section droite de la poutre.
+
+Dans le cas d'une section rectangulaire comme la poutre étudiée ici, $I_{z}$ s'écrit: 
+
+$$
+I_{z} = \frac{bh^{3}}{12}
+$$
+
+Le lien entre $\varepsilon_{xx}, \varepsilon_{yy} \varepsilon_{zz}$ est : $- \nu\varepsilon_{xx} = \varepsilon_{yy} \varepsilon_{zz}$

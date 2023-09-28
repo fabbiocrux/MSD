@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
   
+  
 website:
   title: "MSD" 
   site-url: ""
@@ -143,4 +144,3 @@ execute:
   #freeze: true
 
 bibliography: references.bib
-
