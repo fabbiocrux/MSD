@@ -1,0 +1,24 @@
+FlexPDE Version 7.22/OSXi  17:12:01 Nov 24 2023
+(Times listed are wall-clock times, not charged CPU).
+
+START /Users/fabio/Documents/ENSGSI/MSD/Lucas/TP/Re TDS numeriques Mécanique Solide Deformable  - ENSGSI/Fabio.pde  11:12:19 12/5/23
+ +00:00:00| Mesh Generation Complete
+ +00:00:00| Mesh dump written to /Users/fabio/Documents/ENSGSI/MSD/Lucas/TP/Re TDS numeriques Mécanique Solide Deformable  - ENSGSI/Fabio_output/Fabio_initialmesh.xfr
+Using 1 Threads  Cubic Curvature 
+ +00:00:00| (1)Linear Step 1 Error= 4.730073 Orthomin/BInv(130)
+ +00:00:00| (1)Linear Step 2 Error= 1.584e-6 Orthomin/BInv(151)
+ +00:00:00| (1)Linear Step 3 Error= 8.00e-15 Orthomin/BInv(146)
+ +00:00:00| GRID 1 Nodes=22 Cells=20 DOF=124 RMS ERR= 0.008710 MAX ERR= 0.012282 MEM=3711 KiB
+ +00:00:00| (1)Linear Step 1 Error= 0.008946 Orthomin/BInv(148)
+ +00:00:00| (1)Linear Step 2 Error= 6.24e-10 Orthomin/BInv(157)
+ +00:00:00| GRID 2 Nodes=25 Cells=25 DOF=148 RMS ERR= 0.005523 MAX ERR= 0.008256 MEM=3773 KiB
+ +00:00:00| (1)Linear Step 1 Error= 0.003644 Orthomin/ILU(148)
+ +00:00:00| (1)Linear Step 2 Error= 1.851e-9 Orthomin/ILU(155)
+ +00:00:01| GRID 3 Nodes=48 Cells=61 DOF=325 RMS ERR= 7.130e-4 MAX ERR= 0.001191 MEM=4194 KiB
+ +00:00:01| (1)Linear Step 1 Error= 0.001316 Orthomin/ILU(161)
+ +00:00:01| (1)Linear Step 2 Error= 4.86e-10 Orthomin/ILU(168)
+ +00:00:01| GRID 4 Nodes=77 Cells=111 DOF=562 RMS ERR= 1.048e-4 MAX ERR= 1.731e-4 MEM=4775 KiB
+ +00:00:01| (1)Linear Step 1 Error= 6.084e-4 Orthomin/ILU(103)
+ +00:00:01| (1)Linear Step 2 Error= 1.421e-9 Orthomin/ILU(182)
+ +00:00:01| GRID 5 Nodes=89 Cells=131 DOF=658 RMS ERR= 3.079e-5 MAX ERR= 4.937e-5 MEM=5005 KiB
+ +00:00:01| --DONE-- 11:12:20 12/5/23

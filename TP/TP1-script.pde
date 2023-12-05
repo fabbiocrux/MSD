@@ -1,0 +1,83 @@
+TITLE
+"Essai de Traction"
+SELECT
+errlim=4e-5											{Précision de l'erreur limite}
+ ! painted
+
+VARIABLES											{Inconnues du problème}
+u				
+v
+
+DEFINITIONS
+
+! Geometrie
+larg=0.03	 {Dimensions de l’éprouvette : largeur}
+Long=0.3	 {Dimensions de l’éprouvette : longueur}
+
+! Matériaux
+E=210e9		 {Caractéristique du matériau : Module de Young}
+nu=0.3		 {Caractéristique du matériau : Coefficient de Poisson}
+
+! Contraintes
+sigma0=10e6		{Valeur de la contrainte imposée}
+
+! Coeficients de Lamé
+lamb= nu*E/(1+nu)/(1-2*nu)  
+mu=E/2/(1+nu)				
+
+! Matrice de Déformation
+exx=dx(u)					{Deformation normale XX}
+eyy=dy(v)					{Deformation normale selon YY}
+ezz=-lamb/(lamb+2*mu)*(exx+eyy)  {Deformation normale selon ZZ}
+exy=0.5*(dy(u)+dx(v))		{Deformation tangentielle XY}
+
+! Matrice de Contraintes Seon Loi de Hooke
+sxx=(2*mu)*exx+lamb*(exx+eyy+ezz)	{Contrainte normale XX}
+sxy=2*mu*exy						{Contrainte tangentielle XY}
+syy=(2*mu)*eyy+lamb*(exx+eyy+ezz)	{Contrainte normale YY}
+
+EQUATIONS
+u:dx(sxx)+dy(sxy)=0		{Equation d'équilibre local pour le déplacement u}
+v:dx(sxy)+dy(syy)=0		{Equation d'équilibre local pour le déplacement v}
+
+BOUNDARIES
+
+! Définition de la géométrie de l'éprouvette
+region 1 "contrainte_1"	
+start(-larg/2,0)
+Value(u)=0  {Valur de deplacement}
+Value(v)=0  {Valur de deplacement}
+line to (larg/2,0)
+Natural(u)=0
+Natural(v)=0
+line to (larg/2,-Long)
+Natural(u)=0
+Natural(v)=-sigma0
+line to (-larg/2,-Long)
+Natural(u)=0
+Natural(v)=0
+line to close
+
+PLOTS
+
+! Visualisation de l'éprouvette déformée avec un facteur d'accentuation		
+grid(x+1e3*u,y+1e3*v)	
+
+! Vector Graphique
+vector(u,v) as "Vecteur deplacement"					
+
+! Contour
+contour(u)		
+contour(v)
+contour(sxx)
+contour(syy)
+
+! Elevation
+elevation(v) from (0,0) to (0,-Long)	
+elevation(sxx) from (0,0) to (0,-Long) 
+elevation(syy) from (0,0) to (0,-Long) 
+elevation(exx) from (-Larg/2,-Long/2) to (Larg/2,-Long/2) 
+elevation(eyy) from (0,0) to (0,-Long) 
+elevation(syy) from (-larg/2,0) to (larg/2,0)
+
+END

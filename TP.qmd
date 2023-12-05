@@ -5,5 +5,27 @@ subtitle: "Introduction à la conception de système mécatronique"
 toc: true
 ---
 
-## Presentations
+## Objectif
 
+L'objectif des ces six séances de TD numérique en Mécanique de Solide Deformable consiste à:
+
+1. Visualiser les notions abordées entre les cours magistraux et en travaux dirigées.
+2. Conforter les hypothèses apprises en cours et en TD analytiques
+3. Prendre le temps de discuter des résultats qui peuvent être dédiuts sous FlexPDE.
+
+Dans un premier temps les étudiants devront modéliser sur un matériau élastique homogène et isotrope soumis à une traction.
+Pour cela, cette thèmatique sera étalée sur quatre séances: 
+
+1. **Séance 1**: Prise en main du code FlexPDE à travers l'essaie mécanique de traction verticale en 2D. Les étudiants devront commenter le code à trou que on leur ai fourni sur Arche. la correctino de ce TD se fera par le biais de capture d'écran.
+1. **Séance 2**: Terminer la prise en main du code, vérifier qu'il fonctionne pour tout le monde et consacrer une grande partie de la séance aux résultats.
+1. **Séance 3**: Confrontation et limites du principe de Saint-Venant. Les étudiants devront modéliser trois éprouvettes (dans le même fichier) soumises un essai de traction avec tris répartitions de contrainte différents.
+1. **Séance 4**: Interprétation des résultats des modélisations de la séance 3, réponse aux questions. 
+Les étudiants devront ensuite effectuer la même modélisation en ajoutant les forces volumiques (poids). 
+Ils devront ensuite analyser les résultats.
+1. **Séance 5 et 6**: Confronter aux étudiants à un problème classique d'elasticité qu'il est difficile de résoudre analytiquement: l'étude de la plaque percée.
+
+Pour les séances 1 à 4, les étudiants auront sur ARCHE le script FlexPDE avec un nombre important d'information supprimées.
+Pour les séances 5 et 6, ils partition d'un script vierge. 
+Enfin, les étudiants disposent d'un tutoriel que je leut ai présenté en cours et fourni sous ARCHE. 
+C'est aux étudiants de faire leut correction en faisant des captures d'écran des résultats et de les commenter. 
+Ils auront des questions sur FlexPDE lors du test final. 
