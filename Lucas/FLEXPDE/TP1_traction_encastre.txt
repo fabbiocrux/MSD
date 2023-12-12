@@ -1,0 +1,66 @@
+TITLE
+"Essai de Traction"
+SELECT
+errlim=4e-5											{Précision de l'erreur limite}
+ ! painted
+
+VARIABLES											{Inconnues du problème}
+u				
+v
+
+DEFINITIONS
+larg=0.03																	{Dimensions de l’éprouvette : largeur}
+Long=0.3																	{Dimensions de l’éprouvette : longueur}
+E=210e9																	{Caractéristique du matériau : Module de Young}
+nu=0.3																	{Caractéristique du matériau : Coefficient de Poisson}
+sigma0=10e6															{Valeur de la contrainte imposée}
+lamb= nu*E/(1+nu)/(1-2*nu)										{Coefficient de Lamé}
+mu=E/2/(1+nu)															{Coefficient de Lamé}
+exx=dx(u)																{Relation entre déformation et déplacment selon xx}
+exy=0.5*(dy(u)+dx(v))												{Relation entre déformation et déplacment selon xy}
+eyy=dy(v)																{Relation entre déformation et déplacment selon yy}
+ezz=-lamb/(lamb+2*mu)*(exx+eyy)						{Relation entre déformation et déplacment selon zz}
+sxx=(2*mu)*exx+lamb*(exx+eyy+ezz)					{Loi de Hooke en contrainte pour xx}
+sxy=2*mu*exy														{Loi de Hooke en contrainte pour xy}
+syy=(2*mu)*eyy+lamb*(exx+eyy+ezz)					{Loi de Hooke en contrainte pour yy}
+
+EQUATIONS
+u:dx(sxx)+dy(sxy)=0							{Equation d'équilibre local pour le déplacement u}
+v:dx(sxy)+dy(syy)=0							{Equation d'équilibre local pour le déplacement v}
+
+BOUNDARIES
+
+region 1 "contrainte_1"						{Définition de la géométrie de l'éprouvette}
+start(-larg/2,0)
+value(u)=0
+Value(v)=0
+line to (larg/2,0)
+
+Natural(u)=0
+Natural(v)=0
+line to (larg/2,-Long)
+
+
+Natural(u)=0
+Natural(v)=-sigma0
+line to (-larg/2,-Long)
+
+Natural(u)=0
+Natural(v)=0
+line to close
+
+PLOTS
+grid(x+1e3*u,y+1e3*v)						{Visualisation de l'éprouvette déformée avec un facteur d'accentuation}		
+vector(u,v) as "Vecteur deplacement"					
+contour(u)				
+contour(v)
+contour(sxx)
+contour(syy)
+elevation(v) from (0,0) to (0,-Long)	
+elevation(sxx) from (0,0) to (0,-Long) 
+elevation(syy) from (0,0) to (0,-Long) 
+elevation(exx) from (-Larg/2,-Long/2) to (Larg/2,-Long/2) 
+elevation(eyy) from (0,0) to (0,-Long) 
+elevation(syy) from (-larg/2,0) to (larg/2,0)
+
+END

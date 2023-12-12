@@ -15,7 +15,7 @@ larg=0.03	 {Dimensions de l’éprouvette : largeur}
 Long=0.3	 {Dimensions de l’éprouvette : longueur}
 
 ! Matériaux
-E=70e9		 {Caractéristique du matériau : Module de Young}
+E=210e9		 {Caractéristique du matériau : Module de Young}
 nu=0.3		 {Caractéristique du matériau : Coefficient de Poisson}
 
 ! Contraintes
@@ -64,21 +64,20 @@ PLOTS
 grid(x+1e3*u,y+1e3*v)	
 
 ! Vector Graphique
-!vector(u,v) as "Vecteur deplacement"					
+vector(u,v) as "Vecteur deplacement"					
 
 ! Contour
-!contour(u)		
-!contour(v)
-!contour(sxx)
-!contour(syy)
+contour(u)		
+contour(v)
+contour(sxx)
+contour(syy)
 
 ! Elevation
-!elevation(v) from (0,0) to (0,-Long)	
+elevation(v) from (0,0) to (0,-Long)	
 elevation(sxx) from (0,0) to (0,-Long) 
-!elevation(syy) from (0,0) to (0,-Long) 
-!elevation(exx) from (-Larg/2,-Long/2) to (Larg/2,-Long/2) 
-!elevation(eyy) from (0,0) to (0,-Long) 
-!elevation(syy) from (-larg/2,0) to (larg/2,0)
+elevation(syy) from (0,0) to (0,-Long) 
+elevation(exx) from (-Larg/2,-Long/2) to (Larg/2,-Long/2) 
+elevation(eyy) from (0,0) to (0,-Long) 
+elevation(syy) from (-larg/2,0) to (larg/2,0)
 
 END
-

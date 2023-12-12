@@ -1,0 +1,126 @@
+
+
+TITLE 'Eprouvette'
+
+SELECT
+   errlim = 1e-4
+   biprecon 
+   painted
+
+COORDINATES
+   cartesian2
+
+VARIABLES        {inconnues du problème}
+   u              {déplacement selon x }
+   v              {déplacement selon y }
+   
+      
+
+DEFINITIONS    {définition des parametres }
+
+   Lo = 1            {longueur en [m] }
+   La = 0.2         {largeur en [m] }
+   L1=3*La
+   Rt = 0.05      {rayon du trou en [m] }
+   xc = Lo/2      {coordonnée x du centre du trou en [m] }
+   yc = 0        	{coordonnée y du centre du trou en [m] }
+  
+  
+ {Propriétés du matériau}
+
+   E = 70e9                                 {module de Young en [Pa] }
+   nu = 0.33                                {coefficient de Poisson en [-] }
+   lam = nu*E/((1+nu)*(1-2*nu))  {coefficient de Lamé en [Pa] }
+   mu = E/2/(1+nu)                     {coefficient de Lamé en [Pa] }
+   rho = 2700                             {densité en [kg/m3] }
+  
+ {Lien entre déformation et déplacement} 
+
+   exx = dx(u)                       
+   eyy = dy(v)                            
+   exy = 0.5*(dy(u) + dx(v))       
+   ezz=-lam/(lam+2*mu)*(exx+eyy)
+ 
+ 
+ {Loi de Hooke}
+ 
+   Sxx = 2*mu*exx + lam*(exx+eyy+ezz)
+   Syy = 2*mu*eyy + lam*(exx+eyy+ezz)
+   Sxy = 2*mu*exy
+
+{Contrainte imposée}
+
+   sigma0 = 10e8
+   
+
+
+ 
+EQUATIONS
+  u:  dx(Sxx) + dy(Sxy)  = 0 
+  v:  dx(Sxy) + dy(Syy)  = 0 
+
+CONSTRAINTS		{Étant donné que toutes les frontières sont libres, il est nécessaire d'appliquer des contraintes pour éliminer les mouvements}
+  integral(u) = 0						{translations éliminées} 
+  integral(v) = 0					   	{translations éliminées} 
+  integral(dx(v) - dy(u)) = 0		{rotations éliminées} 
+
+
+BOUNDARIES 
+        
+        REGION 1      
+      START(0,-La/2)   
+        load(u) = 0
+        load(v) = 0
+      LINE TO (Lo,-La/2)
+       load(u)=sigma0			{ Composante normale de la contrainte} 
+       load(v) = 0
+      LINE TO (Lo,La/2)
+        load(u) = 0
+        load(v) = 0
+      LINE TO (0,La/2)
+        load(u)=-sigma0			{ Composante normale de la contrainte} 
+        load(v) = 0
+      LINE TO CLOSE
+       START(xc,yc+Rt)
+        load(u) = 0
+        load(v) = 0
+        ARC(CENTER=xc,yc) ANGLE=-360 
+ 		LINE TO CLOSE 
+
+    {   REGION 2      
+      START(0,-La/2+L1)   
+        load(u) = 0
+       load(v) = 0
+      LINE TO (Lo,-La/2+L1)
+        load(u)=-sigma0
+        load(v)=0
+      LINE TO (Lo,La/2+L1)
+        load(u) = 0
+        load(v) = 0
+      LINE TO (0,La/2+L1)
+        load(u)=sigma0
+        load(v)=0
+      LINE TO CLOSE }
+
+      
+    
+
+PLOTS            { save result displays }
+  GRID(x+2*u,y+2*v)
+  CONTOUR(u) 
+  CONTOUR(v) 
+  CONTOUR(exx) 
+  CONTOUR(Sxx) 
+  CONTOUR(Syy) 
+  !CONTOUR(Sxy) 
+  elevation(sxx) from (0,0+L1) to (Lo,0+L1)
+  elevation(syy) from (0,0+L1) to (Lo,0+L1)
+  elevation(sxx) from (0,La/2) to (Lo,La/2)
+  elevation(sxx) from (0,La/3) to (Lo,La/3)
+  elevation(sxx) from (0,La/10) to (Lo,La/10)
+  elevation(syy) from (Lo/2,-La) to (Lo/2,La)
+  elevation(u) from (0,La/2) to (Lo,La/2)
+  elevation(u) from (Lo/2,-La/2+L1) to (Lo/2,La/2+L1)
+  
+
+END

@@ -1,0 +1,57 @@
+TITLE
+"Essai de Traction"
+SELECT
+errlim=4e-5
+ ! painted
+
+VARIABLES
+
+
+
+
+DEFINITIONS
+larg=
+Long=
+E=
+nu=
+sigma0=
+lamb= nu*E/(1+nu)/(1-2*nu)
+mu=
+exx=dx(u)
+exy=
+eyy=
+ezz=
+sxx=
+sxy=
+syy=
+
+EQUATIONS
+
+
+
+BOUNDARIES
+
+
+region 1 "contrainte_1"						
+start(-larg/2,0)
+value(u)=0
+Value(v)=0
+
+
+
+
+
+
+line to (-larg/2,-Long)
+
+
+line to close
+
+PLOTS
+grid(x+1e3*u,y+1e3*v)						{Visualisation de l'éprouvette déformée avec un facteur d'accentuation}		
+vector(u,v) as "Vecteur deplacement"					
+elevation(v) from (0,0) to (0,-Long)	
+elevation(syy) from (0,0) to (0,-Long) 
+
+
+END

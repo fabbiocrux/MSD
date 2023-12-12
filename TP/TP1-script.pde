@@ -43,17 +43,24 @@ v:dx(sxy)+dy(syy)=0		{Equation d'équilibre local pour le déplacement v}
 BOUNDARIES
 
 ! Définition de la géométrie de l'éprouvette
+! A --> B
 region 1 "contrainte_1"	
 start(-larg/2,0)
-Value(u)=0  {Valur de deplacement}
-Value(v)=0  {Valur de deplacement}
+Value(u)=0  {Valur de deplacement en sens U}
+Value(v)=0  {Valur de deplacement en sens V}
 line to (larg/2,0)
-Natural(u)=0
-Natural(v)=0
+
+! B --> C
+Natural(u)=0  {Valur de contrainte en sens U}
+Natural(v)=0  {Valur de contrainte en sens V}
 line to (larg/2,-Long)
+
+! C --> D
 Natural(u)=0
 Natural(v)=-sigma0
 line to (-larg/2,-Long)
+
+! D --> A
 Natural(u)=0
 Natural(v)=0
 line to close

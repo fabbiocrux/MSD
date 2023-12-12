@@ -1,0 +1,455 @@
+
+================================================================
+===  FlexPDE Version 7.22/OSXi  17:12:01 Nov 24 2023  Copyright (c) 1996-2020 PDE Solutions Inc.
+===  /Users/fabio/Documents/ENSGSI/MSD/TP/TP2-script.pde 11:29:12 12/12/23
+================================================================
+    1| { Fill in the following sections (removing comment marks ! if necessary),
+    2|   and delete those that are unused.}
+    3| TITLE 'New Problem'     { the problem identification }
+    4| COORDINATES cartesian2  { coordinate system, 1D,2D,3D, etc }
+    5| VARIABLES        { system variables }
+    6|   u              { choose your own names }
+    7| ! SELECT         { method controls }
+    8| ! DEFINITIONS    { parameter definitions }
+    9| ! INITIAL VALUES
+   10| EQUATIONS        { PDE's, one for each variable }
+   11|   div(grad(u))=0 { one possibility }
+   12| ! CONSTRAINTS    { Integral constraints }
+   13| BOUNDARIES       { The domain definition }
+   14|   REGION 1       { For each material region }
+   15|     START(0,0)   { Walk the domain boundary }
+   16|     LINE TO (1,0) TO (1,1) TO (0,1) TO CLOSE
+   17| ! TIME 0 TO 1    { if time dependent }
+   18| MONITORS         { show progress }
+   19| PLOTS            { save result displays }
+   20|   CONTOUR(u)
+   21| END
+Uorder=3
+ U order=3
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+
+==========================
+ SUMMARIZE PARAMETERS
+==========================
+ Param         name     Type       Domain               Definition
+-------------------------------------------------------------------
+
+
+
+==========================
+SUMMARIZE EQUATIONS
+==========================
+In the following equation definitions
+Derivatives are represented by appending a dot and the differentiated coordinate.
+The operator <V> represents volume integration. <Vb> is weighted by basis function.
+<Vu> is weighted by the upwind modifer. <Vbu> is weighted by both.
+A dotted volume integral represents volume integration weighted by the indicated
+derivative of the basis function. 'Beta' represents a basis function.
+The operator <S>.c represents surface integration weighted by the indicated
+direction cosine.
+
+            DEFINES     REGION/     DEPENDS                      BASE          CSE
+ EQUATION     VAR    COMPARTMENT      VAR         FUNCTION     COMPLEXITY   COMPLEXITY     MEMORY  DEFINITION
+-----------------------------------------------------------------------------------------------------------
+
+PRIMARY EQUATIONS
+     1          U                            Field Equation                                      : (DIV(GRAD(U)))-0
+                           1                         Source          1            2          160 : <Vb>(0)
+                                             Space Galerkin         10            6          480 : -((<Vb>.X(U.X))+(<Vb>.Y(U.Y)))
+                                        U    Space Jacobian         10            6          480 : -((<Vb>.X(Beta.X))+(<Vb>.Y(Beta.Y)))
+                                           Surface Galerkin          5            5          400 : (<S>.X(U.X))+(<S>.Y(U.Y))
+                                        U  Surface Jacobian          5            5          400 : (<S>.X(Beta.X))+(<S>.Y(Beta.Y))
+
+========================================================
+     SUMMARIZE BOUNDARY CONDITIONS
+========================================================
+
+BOUNDARY CONDITION TAGS with associated BC INDEX
+
+    BC  KIND     DEFINES   COMPARTMENT     DEPENDS     FUNCTION     COMPLEXITY    MEMORY    DEFINITION
+-----------------------------------------------------------------------------------------------------
+
+===============================
+  SUMMARIZE PLOTS
+===============================
+                      REGION/       BASE        CSE
+  PLOT    TYPE     COMPARTMENT  COMPLEXITY  COMPLEXITY    MEMORY    DEFINITION
+------------------------------------------------------------------------------
+     1     CONTOUR          0          1          1           80  : U
+
+==UNUSED== PARAMETER DEFINITIONS:
+
+Uorder=3
+ U order=3
+LOG Threads=1 Order=3 Speed=1 Stability=0
+RMS Spatial Errors   0.000000
+DO_NEXTSTAGE pde 0x7fe65c94de00  MAXSTAGE=0
+
+================================================================
+===  FlexPDE Version 7.22/OSXi  17:12:01 Nov 24 2023  Copyright (c) 1996-2020 PDE Solutions Inc.
+===  /Users/fabio/Documents/ENSGSI/MSD/TP/TP2-script.pde 11:58:53 12/12/23
+================================================================
+    1| TITLE
+    2| "Essai de Traction"
+    3| SELECT
+    4| errlim=4e-5											{Précision de l'erreur limite}
+    5|  ! painted
+    6| 
+    7| VARIABLES											{Inconnues du problème}
+    8| u				
+    9| v
+   10| 
+   11| DEFINITIONS
+   12| 
+   13| ! Geometrie
+   14| larg=0.03	 {Dimensions de l’éprouvette : largeur}
+   15| Long=0.3	 {Dimensions de l’éprouvette : longueur}
+   16| s=larg*larg   {Surface de l’éprouvette}
+   17| separation=2*larg {Surface de l’éprouvette}
+   18| 
+   19| 
+   20| ! Matériaux
+   21| E=69e9		{Caractéristique du matériau : Module de Young}
+   22| nu=0.33		{Caractéristique du matériau : Coefficient de Poisson}
+   23| rho=2700   {Caractéristique du matériau : Densité}
+   24| g=9.81     {Gravité}
+   25| 
+   26| 
+   27| ! Contraintes
+   28| sigma0=10e6		{Valeur de la contrainte imposée}
+   29| sigma2=(3/2)*sigma0 {Valeur de la contrainte imposée }
+   30| 
+   31| ! Coeficients de Lamé
+   32| lamb= nu*E/(1+nu)/(1-2*nu)  
+   33| mu=E/2/(1+nu)				
+   34| 
+   35| ! Matrice de Déformation
+   36| exx=dx(u)					{Deformation normale XX}
+   37| eyy=dy(v)					{Deformation normale selon YY}
+   38| ezz= -lamb/(lamb + 2*mu)*(exx + eyy)  {Deformation normale selon ZZ}
+   39| exy=0.5*(dy(u)+dx(v))		{Deformation tangentielle XY}
+   40| 
+   41| ! Matrice de Contraintes Seon Loi de Hooke
+   42| 
+   43| 
+   44| sxx=(lamb+2*mu)*exx+lamb*(eyy+ezz) {Contrainte normale XX}
+   45| sxy=2*mu*exy	{Contrainte tangentielle XY}
+   46| syy=(lamb+2*mu)*eyy+lamb*(exx+ezz) 	{Contrainte normale YY}
+   47| 
+   48| 
+   49| EQUATIONS
+   50| u:dx(sxx)+ dy(sxy)=0		{Equation d'équilibre local pour le déplacement u}
+   51| v:dx(sxy)+ dy(syy)=0		{Equation d'équilibre local pour le déplacement v}
+   52| 
+   53| BOUNDARIES
+   54| 
+   55| ! Définition de la géométrie de l'éprouvette 1
+   56| ! A --> B
+   57| region 1 "contrainte_1"	
+   58| start(-larg/2,0)
+   59| Value(u)=0  {Valur de deplacement en sens U}
+   60| Value(v)=0  {Valur de deplacement en sens V}
+   61| line to (larg/2,0)
+   62| 
+   63| ! B --> C
+   64| Natural(u)=0  {Valur de contrainte en sens U}
+   65| Natural(v)=0  {Valur de contrainte en sens V}
+   66| line to (larg/2,-Long)
+   67| 
+   68| ! C --> D
+   69| Natural(u)=0
+   70| Natural(v)=-sigma0
+   71| line to (-larg/2,-Long)
+   72| 
+   73| ! D --> A
+   74| Natural(u)=0
+   75| Natural(v)=0
+   76| line to close
+   77| 
+   78| 
+   79| ! Géométrie de l'éprouvette 2
+   80| ! A --> B
+   81| region 1 "contrainte_2"	
+   82| start(-larg/2 + separation,0)
+   83| Value(u)=0  {Valur de deplacement en sens U}
+   84| Value(v)=0  {Valur de deplacement en sens V}
+   85| line to (larg/2+separation,0)
+   86| 
+   87| ! B --> C
+   88| Natural(u)=0  {Valur de contrainte en sens U}
+   89| Natural(v)=0  {Valur de contrainte en sens V}
+   90| line to (larg/2 + separation,-Long)
+   91| 
+   92| ! C --> D*
+   93| Natural(u)=0
+   94| Natural(v)=-sigma2
+   95| line to (larg/6+separation,-Long)
+   96| 
+   97| ! D* --> D**
+   98| Natural(u)=0
+   99| Natural(v)=0
+  100| line to (-larg/6 + separation, -Long)
+  101| 
+  102| ! D** --> D***
+  103| Natural(u)=0
+  104| Natural(v)=-sigma2
+  105| line to (-larg/2+separation,-Long)
+  106| 
+  107| ! D*** --> A
+  108| Natural(u)=0
+  109| Natural(v)=0
+  110| line to close
+  111| 
+  112| 
+  113| 
+  114| ! Géométrie de l'éprouvette 3
+  115| {region 3 "contrainte_3"
+  116| 
+  117| start(-larg/2-separation,0)
+  118| value(u)=0
+  119| value(v)=0
+  120| line to (larg/2-separation,0)
+  121| 
+  122| Natural(u)=0
+  123| Natural(v)=0
+  124| 
+  125| 
+  126| line to (larg/2-separation,-Long)
+  127| Natural(u)=0
+  128| Natural(v)=-8*sigma0/3
+  129| 
+  130| 
+  131| line to (-larg/6-separation,-Long)
+  132| Natural(u)=0
+  133| Natural(v)=0
+  134| 
+  135| 
+  136| line to (larg/6-separation,-Long)
+  137| Natural(u)=0
+  138| Natural(v)=-sigma0/3
+  139| 
+  140| 
+  141| line to (-larg/2-separation,-Long)
+  142| Natural(u)=0
+  143| Natural(v)=0
+  144| line to close }
+  145| 
+  146| 
+  147| PLOTS
+  148| 
+  149| ! Visualisation de l'éprouvette déformée avec un facteur d'accentuation		
+  150| grid(x+1e3*u,y+1e3*v)	
+  151| 
+  152| ! Vector Graphique
+  153| vector(u,v) as "Vecteur deplacement"					
+  154| 
+  155| ! Contour
+  156| contour(u)		
+  157| contour(v)
+  158| contour(sxx)
+  159| contour(syy)
+  160| 
+  161| ! Elevation
+  162| elevation(v) from (0,0) to (0,-Long)	
+  163| elevation(sxx) from (0,0) to (0,-Long) 
+  164| elevation(syy) from (0,0) to (0,-Long) 
+  165| elevation(exx) from (-Larg/2,-Long/2) to (Larg/2,-Long/2) 
+  166| elevation(eyy) from (0,0) to (0,-Long) 
+  167| elevation(syy) from (-larg/2,0) to (larg/2,0)
+  168| 
+  169| END
+Uorder=3
+ U order=1
+ V order=3
+STUDENT VERSION SETS GROW2=0.35 GRIDARC=30
+IMPORTMESH(0) NDIM=2 NB=10 NAB=3 NODES=137 CELLS=232 SIDES=368 LEGS=0 imaging=0 time(0)=0
+MESH IMPORT ABORTED: Different GRID2D
+Transferred mesh does not match local domain!
+(Boundary descriptions must match exactly.)
+
+==========================
+ SUMMARIZE PARAMETERS
+==========================
+ Param         name     Type       Domain               Definition
+-------------------------------------------------------------------
+     1       ERRLIM   Scalar      (GLOBAL)               :  4.00e-5
+                                             [1]=>  4.00e-5
+     2         LARG   Scalar      (GLOBAL)               :  0.03000
+                                             [1]=>  0.03000
+     3         LONG   Scalar      (GLOBAL)               :  0.30000
+                                             [1]=>  0.30000
+     4            S   Scalar      (GLOBAL)               : LARG*LARG
+                                             [1]=>  9.00e-4
+     5   SEPARATION   Scalar      (GLOBAL)               : 2*LARG
+                                             [1]=>  0.06000
+     6            E   Scalar      (GLOBAL)               :  6.9e+10
+                                             [1]=>  6.9e+10
+     7           NU   Scalar      (GLOBAL)               :  0.33000
+                                             [1]=>  0.33000
+     8          RHO   Scalar      (GLOBAL)               : 2700
+                                             [1]=> 2700
+     9            G   Scalar      (GLOBAL)               :  9.81000
+                                             [1]=>  9.81000
+    10       SIGMA0   Scalar      (GLOBAL)               :  1.00e+7
+                                             [1]=>  1.00e+7
+    11       SIGMA2   Scalar      (GLOBAL)               :  1.50000*SIGMA0
+                                             [1]=>  1.50e+7
+    12         LAMB   Scalar      (GLOBAL)               : ((NU*E)/(1+NU))/(1-(2*NU))
+                                             [1]=>  5.0e+10
+    13           MU   Scalar      (GLOBAL)               : (E* 0.50000)/(1+NU)
+                                             [1]=>  2.6e+10
+    14          EXX   Scalar      (GLOBAL)               : DX(U)
+                                             [1]=> U.X
+    15          EYY   Scalar      (GLOBAL)               : DY(V)
+                                             [1]=> V.Y
+    16          EZZ   Scalar      (GLOBAL)               : -((LAMB*(EXX+EYY))/(LAMB+(2*MU)))
+                                             [8]=> -(( 5.0e+10*(U.X+V.Y))/ 1.0e+11)
+    17          EXY   Scalar      (GLOBAL)               :  0.50000*((DY(U))+(DX(V)))
+                                             [5]=>  0.50000*(U.Y+V.X)
+    18          SXX   Scalar      (GLOBAL)               : ((LAMB+(2*MU))*EXX)+(LAMB*(EYY+EZZ))
+                                             [15]=> ( 1.0e+11*U.X)+( 5.0e+10*(V.Y-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11)))
+    19          SXY   Scalar      (GLOBAL)               : (2*MU)*EXY
+                                             [5]=>  2.6e+10*(U.Y+V.X)
+    20          SYY   Scalar      (GLOBAL)               : ((LAMB+(2*MU))*EYY)+(LAMB*(EXX+EZZ))
+                                             [15]=> ( 1.0e+11*V.Y)+( 5.0e+10*(U.X-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11)))
+
+
+
+==========================
+SUMMARIZE EQUATIONS
+==========================
+In the following equation definitions
+Derivatives are represented by appending a dot and the differentiated coordinate.
+The operator <V> represents volume integration. <Vb> is weighted by basis function.
+<Vu> is weighted by the upwind modifer. <Vbu> is weighted by both.
+A dotted volume integral represents volume integration weighted by the indicated
+derivative of the basis function. 'Beta' represents a basis function.
+The operator <S>.c represents surface integration weighted by the indicated
+direction cosine.
+
+            DEFINES     REGION/     DEPENDS                      BASE          CSE
+ EQUATION     VAR    COMPARTMENT      VAR         FUNCTION     COMPLEXITY   COMPLEXITY     MEMORY  DEFINITION
+-----------------------------------------------------------------------------------------------------------
+
+PRIMARY EQUATIONS
+     1          U                            Field Equation                                      : ((DX(SXX))+(DY(SXY)))-0
+                           1                         Source          1            2          160 : <Vb>(0)
+                                             Space Galerkin         46           24         1920 : -((<Vb>.X(( 1.0e+11*U.X)+( 5.0e+10*(V.Y-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11)))))+(<Vb>.Y( 2.6e+10*(U.Y+V.X))))
+                                        U    Space Jacobian         30           16         1280 : -((<Vb>.X(( 1.0e+11*Beta.X)-(( 2.5e+21*Beta.X)/ 1.0e+11)))+(<Vb>.Y( 2.6e+10*Beta.Y)))
+                                        V    Space Jacobian         30           16         1280 : -((<Vb>.X( 5.0e+10*(Beta.Y-(( 5.0e+10*Beta.Y)/ 1.0e+11))))+(<Vb>.Y( 2.6e+10*Beta.X)))
+                                           Surface Galerkin         23           23         1840 : (<S>.X(( 1.0e+11*U.X)+( 5.0e+10*(V.Y-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11)))))+(<S>.Y( 2.6e+10*(U.Y+V.X)))
+                                        U  Surface Jacobian         15           15         1200 : (<S>.X(( 1.0e+11*Beta.X)-(( 2.5e+21*Beta.X)/ 1.0e+11)))+(<S>.Y( 2.6e+10*Beta.Y))
+                                        V  Surface Jacobian         15           15         1200 : (<S>.X( 5.0e+10*(Beta.Y-(( 5.0e+10*Beta.Y)/ 1.0e+11))))+(<S>.Y( 2.6e+10*Beta.X))
+                           2                         Source          1            2          160 : <Vb>(0)
+                                             Space Galerkin         46           24         1920 : -((<Vb>.X(( 1.0e+11*U.X)+( 5.0e+10*(V.Y-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11)))))+(<Vb>.Y( 2.6e+10*(U.Y+V.X))))
+                                        U    Space Jacobian         30           16         1280 : -((<Vb>.X(( 1.0e+11*Beta.X)-(( 2.5e+21*Beta.X)/ 1.0e+11)))+(<Vb>.Y( 2.6e+10*Beta.Y)))
+                                        V    Space Jacobian         30           16         1280 : -((<Vb>.X( 5.0e+10*(Beta.Y-(( 5.0e+10*Beta.Y)/ 1.0e+11))))+(<Vb>.Y( 2.6e+10*Beta.X)))
+                                           Surface Galerkin         23           23         1840 : (<S>.X(( 1.0e+11*U.X)+( 5.0e+10*(V.Y-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11)))))+(<S>.Y( 2.6e+10*(U.Y+V.X)))
+                                        U  Surface Jacobian         15           15         1200 : (<S>.X(( 1.0e+11*Beta.X)-(( 2.5e+21*Beta.X)/ 1.0e+11)))+(<S>.Y( 2.6e+10*Beta.Y))
+                                        V  Surface Jacobian         15           15         1200 : (<S>.X( 5.0e+10*(Beta.Y-(( 5.0e+10*Beta.Y)/ 1.0e+11))))+(<S>.Y( 2.6e+10*Beta.X))
+     2          V                            Field Equation                                      : ((DX(SXY))+(DY(SYY)))-0
+                           1                         Source          1            2          160 : <Vb>(0)
+                                             Space Galerkin         46           24         1920 : -((<Vb>.X( 2.6e+10*(U.Y+V.X)))+(<Vb>.Y(( 1.0e+11*V.Y)+( 5.0e+10*(U.X-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11))))))
+                                        U    Space Jacobian         30           16         1280 : -((<Vb>.X( 2.6e+10*Beta.Y))+(<Vb>.Y( 5.0e+10*(Beta.X-(( 5.0e+10*Beta.X)/ 1.0e+11)))))
+                                        V    Space Jacobian         30           16         1280 : -((<Vb>.X( 2.6e+10*Beta.X))+(<Vb>.Y(( 1.0e+11*Beta.Y)-(( 2.5e+21*Beta.Y)/ 1.0e+11))))
+                                           Surface Galerkin         23           23         1840 : (<S>.X( 2.6e+10*(U.Y+V.X)))+(<S>.Y(( 1.0e+11*V.Y)+( 5.0e+10*(U.X-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11)))))
+                                        U  Surface Jacobian         15           15         1200 : (<S>.X( 2.6e+10*Beta.Y))+(<S>.Y( 5.0e+10*(Beta.X-(( 5.0e+10*Beta.X)/ 1.0e+11))))
+                                        V  Surface Jacobian         15           15         1200 : (<S>.X( 2.6e+10*Beta.X))+(<S>.Y(( 1.0e+11*Beta.Y)-(( 2.5e+21*Beta.Y)/ 1.0e+11)))
+                           2                         Source          1            2          160 : <Vb>(0)
+                                             Space Galerkin         46           24         1920 : -((<Vb>.X( 2.6e+10*(U.Y+V.X)))+(<Vb>.Y(( 1.0e+11*V.Y)+( 5.0e+10*(U.X-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11))))))
+                                        U    Space Jacobian         30           16         1280 : -((<Vb>.X( 2.6e+10*Beta.Y))+(<Vb>.Y( 5.0e+10*(Beta.X-(( 5.0e+10*Beta.X)/ 1.0e+11)))))
+                                        V    Space Jacobian         30           16         1280 : -((<Vb>.X( 2.6e+10*Beta.X))+(<Vb>.Y(( 1.0e+11*Beta.Y)-(( 2.5e+21*Beta.Y)/ 1.0e+11))))
+                                           Surface Galerkin         23           23         1840 : (<S>.X( 2.6e+10*(U.Y+V.X)))+(<S>.Y(( 1.0e+11*V.Y)+( 5.0e+10*(U.X-(( 5.0e+10*(U.X+V.Y))/ 1.0e+11)))))
+                                        U  Surface Jacobian         15           15         1200 : (<S>.X( 2.6e+10*Beta.Y))+(<S>.Y( 5.0e+10*(Beta.X-(( 5.0e+10*Beta.X)/ 1.0e+11))))
+                                        V  Surface Jacobian         15           15         1200 : (<S>.X( 2.6e+10*Beta.X))+(<S>.Y(( 1.0e+11*Beta.Y)-(( 2.5e+21*Beta.Y)/ 1.0e+11)))
+
+EQUATION 1 PARAMETER DEPENDENCIES:
+            E           NU         LAMB           MU          EXX          EYY          EZZ          EXY          SXX          SXY
+
+EQUATION 2 PARAMETER DEPENDENCIES:
+            E           NU         LAMB           MU          EXX          EYY          EZZ          EXY          SXY          SYY
+
+========================================================
+     SUMMARIZE BOUNDARY CONDITIONS
+========================================================
+
+BOUNDARY CONDITION TAGS with associated BC INDEX
+BC TAG   1:BC   1 val(U) BC   2 val(V) 
+BC TAG   2:BC   3 nat(U) BC   4 nat(V) 
+BC TAG   3:BC   3 nat(U) BC   5 nat(V) 
+BC TAG   4:BC   3 nat(U) BC   6 nat(V) 
+
+    BC  KIND     DEFINES   COMPARTMENT     DEPENDS     FUNCTION     COMPLEXITY    MEMORY    DEFINITION
+-----------------------------------------------------------------------------------------------------
+     1   VAL          U            1                  Surf Galerkin          1         80  : U
+                                                  U   Surf Jacobian          1         80  : Beta
+                                                  V   Surf Jacobian          1         80  : 0
+         VAL          U            2                  Surf Galerkin          1         80  : U
+                                                  U   Surf Jacobian          1         80  : Beta
+                                                  V   Surf Jacobian          1         80  : 0
+     2   VAL          V            1                  Surf Galerkin          1         80  : V
+                                                  U   Surf Jacobian          1         80  : 0
+                                                  V   Surf Jacobian          1         80  : Beta
+         VAL          V            2                  Surf Galerkin          1         80  : V
+                                                  U   Surf Jacobian          1         80  : 0
+                                                  V   Surf Jacobian          1         80  : Beta
+     3   NAT          U            1                  Surf Galerkin          1         80  : 0
+                                                  U   Surf Jacobian          1         80  : 0
+                                                  V   Surf Jacobian          1         80  : 0
+         NAT          U            2                  Surf Galerkin          1         80  : 0
+                                                  U   Surf Jacobian          1         80  : 0
+                                                  V   Surf Jacobian          1         80  : 0
+     4   NAT          V            1                  Surf Galerkin          1         80  : 0
+                                                  U   Surf Jacobian          1         80  : 0
+                                                  V   Surf Jacobian          1         80  : 0
+         NAT          V            2                  Surf Galerkin          1         80  : 0
+                                                  U   Surf Jacobian          1         80  : 0
+                                                  V   Surf Jacobian          1         80  : 0
+     5   NAT          V            1                  Surf Galerkin          2        160  : <S>(-1.00e+7)
+                                                  U   Surf Jacobian          1         80  : 0
+                                                  V   Surf Jacobian          1         80  : 0
+     6   NAT          V            1                  Surf Galerkin          2        160  : <S>(-1.50e+7)
+                                                  U   Surf Jacobian          1         80  : 0
+                                                  V   Surf Jacobian          1         80  : 0
+
+===============================
+  SUMMARIZE PLOTS
+===============================
+                      REGION/       BASE        CSE
+  PLOT    TYPE     COMPARTMENT  COMPLEXITY  COMPLEXITY    MEMORY    DEFINITION
+------------------------------------------------------------------------------
+     1       GRID2          0          5          5          400  : X+(1000*U)
+                            0          5          5          400  : Y+(1000*V)
+     2      VECTOR          0          3          3          240  : Vector(U,V)
+     3     CONTOUR          0          1          1           80  : U
+     4     CONTOUR          0          1          1           80  : V
+     5     CONTOUR          0         15         17         1360  : ( 1.0e+11*(def#1(U.X)))+( 5.0e+10*((def#2(V.Y))-(( 5.0e+10*((ref#1)+(ref#2)))/ 1.0e+11)))
+     6     CONTOUR          0         15         17         1360  : ( 1.0e+11*(def#6(V.Y)))+( 5.0e+10*((def#5(U.X))-(( 5.0e+10*((ref#5)+(ref#6)))/ 1.0e+11)))
+     7   ELEVATION          0          1          1           80  : V
+     8   ELEVATION          0         15         17         1360  : ( 1.0e+11*(def#9(U.X)))+( 5.0e+10*((def#10(V.Y))-(( 5.0e+10*((ref#9)+(ref#10)))/ 1.0e+11)))
+     9   ELEVATION          0         15         17         1360  : ( 1.0e+11*(def#14(V.Y)))+( 5.0e+10*((def#13(U.X))-(( 5.0e+10*((ref#13)+(ref#14)))/ 1.0e+11)))
+    10   ELEVATION          0          1          1           80  : U.X
+    11   ELEVATION          0          1          1           80  : V.Y
+    12   ELEVATION          0         15         17         1360  : ( 1.0e+11*(def#18(V.Y)))+( 5.0e+10*((def#17(U.X))-(( 5.0e+10*((ref#17)+(ref#18)))/ 1.0e+11)))
+
+==UNUSED== PARAMETER DEFINITIONS:
+ ERRLIM S RHO G
+Uorder=3
+ U order=1
+ V order=3
+LOG Threads=1 Order=3 Speed=1 Stability=0
+Orthomin/BInv FINAL ITERATION 189 of 2018 RNORM=4.59585e-07 XNORM=6.40785 Flag=Ok
+Orthomin/BInv FINAL ITERATION 206 of 2018 RNORM=4.33296e-15 XNORM=1.64775e-06 Flag=Ok
+Orthomin/BInv FINAL ITERATION 204 of 2018 RNORM=4.99796e-23 XNORM=1.20949e-14 Flag=Ok
+RMS Spatial Errors   0.004632  5.133e-4
+Orthomin/BInv FINAL ITERATION 223 of 2022 RNORM=6.7691e-09 XNORM=1.23714 Flag=Ok
+Orthomin/BInv FINAL ITERATION 59 of 2022 RNORM=1.01462e-15 XNORM=3.3252e-08 Flag=Ok
+RMS Spatial Errors   0.021010  3.852e-4
+Orthomin/BInv FINAL ITERATION 340 of 2039 RNORM=9.96058e-11 XNORM=0.0357498 Flag=Ok
+Orthomin/BInv FINAL ITERATION 118 of 2039 RNORM=6.89197e-18 XNORM=4.72642e-10 Flag=Ok
+RMS Spatial Errors   0.005647  2.049e-4
+Orthomin/BInv FINAL ITERATION 327 of 2047 RNORM=3.15894e-10 XNORM=0.0115569 Flag=Ok
+Orthomin/BInv FINAL ITERATION 335 of 2047 RNORM=6.07848e-13 XNORM=0.000199106 Flag=Ok
+Orthomin/BInv FINAL ITERATION 328 of 2047 RNORM=5.44739e-20 XNORM=3.83404e-12 Flag=Ok
+RMS Spatial Errors   0.003214  1.493e-4
+DO_NEXTSTAGE pde 0x7fe65c94de00  MAXSTAGE=0

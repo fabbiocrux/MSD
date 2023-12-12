@@ -1,0 +1,22 @@
+FlexPDE Version 7.22/OSXi  17:12:01 Nov 24 2023
+(Times listed are wall-clock times, not charged CPU).
+
+START /Users/fabio/Documents/ENSGSI/MSD/TP/TP2-script.pde  11:58:53 12/12/23
+ +00:00:00| Mesh Generation Complete
+ +00:00:00| Mesh dump written to /Users/fabio/Documents/ENSGSI/MSD/TP/TP2-script_output/TP2-script_initialmesh.xfr
+Using 1 Threads  Cubic (1,3) Curvature 
+ +00:00:01| (1)Linear Step 1 Error= 6.407845 Orthomin/BInv(189)
+ +00:00:01| (1)Linear Step 2 Error= 1.648e-6 Orthomin/BInv(206)
+ +00:00:01| (1)Linear Step 3 Error= 1.21e-14 Orthomin/BInv(204)
+ +00:00:01| GRID 1 Nodes=51 Cells=50 DOF=299 RMS ERR= 0.001416 MAX ERR= 0.002121 MEM=3789 KiB
+ +00:00:01| (1)Linear Step 1 Error= 1.237136 Orthomin/BInv(223)
+ +00:00:01| (1)Linear Step 2 Error= 3.325e-8 Orthomin/BInv(59)
+ +00:00:01| GRID 2 Nodes=66 Cells=76 DOF=422 RMS ERR= 0.005642 MAX ERR= 0.009678 MEM=3914 KiB
+ +00:00:01| (1)Linear Step 1 Error= 0.035750 Orthomin/BInv(340)
+ +00:00:01| (1)Linear Step 2 Error= 4.73e-10 Orthomin/BInv(118)
+ +00:00:01| GRID 3 Nodes=177 Cells=274 DOF=1349 RMS ERR= 8.095e-4 MAX ERR= 0.001373 MEM=4816 KiB
+ +00:00:01| (1)Linear Step 1 Error= 0.011557 Orthomin/BInv(327)
+ +00:00:01| (1)Linear Step 2 Error= 1.991e-4 Orthomin/BInv(335)
+ +00:00:01| (1)Linear Step 3 Error= 3.83e-12 Orthomin/BInv(328)
+ +00:00:01| GRID 4 Nodes=250 Cells=407 DOF=1967 RMS ERR= 3.140e-4 MAX ERR= 5.952e-4 MEM=5426 KiB
+ +00:00:01| --DONE-- 11:58:54 12/12/23
